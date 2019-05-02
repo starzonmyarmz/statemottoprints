@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ store.name }} &mdash; {{ page.name }}</title>
+
+    <meta charset="utf-8">
+    <meta name="description" content="{{ page.meta_description }}">
+    <meta name="keywords" content="{{ page.meta_keywords }}">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,800,800i,900" rel="stylesheet">
+    <link href="{{ theme | theme_css_url }}" rel="stylesheet">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="{{ theme | theme_js_url }}"></script>
+
+    {{ head_content }}
+  </head>
+
+  <body id="{{ page.permalink }}" class="{{ page.category }}">
+    <header>
+      <div class="wrapper">
+        <div class="left">
+          <a href="/" id="logo" title="{{ store.name | escape }}">
+            <img src="{{ theme.logo.url }}" alt="{{ store.name }}">
+          </a>
+
+          <div class="navigation">
+            <em class="description">Hand-lettered US state mottos on printed goods</em>
+
+            <nav>
+              <ul>
+                <li>
+                  <a href="#">Products</a>
+                  <ul hidden>
+                    {% for category in categories.active %}
+                      <li>{{ category | link_to }}</li>
+                    {% endfor %}
+                  </ul>
+                </li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="/cart">Cart ({{ cart.total | money_with_sign }})</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <form action="/products" method="get">
+          <input type="text" id="search" name="search" placeholder="Search" aria-label="Search" autocomplete="off" required>
+        </form>
+
+      </div>
+    </header>
+
+    <main class="content">
+      {% if page.name != 'Home' %}
+        <h1>{{ page.name }}</h1>
+      {% endif %}
+
+      {% if errors != blank %}
+        <ul class="unstyled errors">
+          {% for error in errors %}
+          <li>{{ error }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+
+      {% if page.category == 'custom' %}
+        {{ page_content | paragraphs }}
+      {% else %}
+        {{ page_content }}
+      {% endif %}
+    </main>
+
+    <footer>
+      <div class="wrapper">
+        <div>
+          <p>
+            <a href="http://twitter.com/sm_prints">Twitter</a>
+            <a href="http://instagram.com/sm_prints">Instagram</a>
+          </p>
+          <p><a href="mailto:hello@statemottoprints.com">hello@statemottoprints.com</a></p>
+          <p>Copyright © 2019 State Motto Prints. All rights reserved. <br> Powered by Big Cartel.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<section id="hero">
+  <div>
+    <h1>Live Free or Die</h1>
+    <h2>New Hampshire State Motto</h2>
+    <a href="#">Shop New Hampshire Products</a>
+  </div>
+</section>
+
+{% paginate products from products.current by theme.products_per_page %}
+  {% if products != blank %}
+    <section id="products">
+      <h2>Featured Products</h2>
+
+      <div class="wrapper">
+        <div class="grid">
+          {% for product in products %}
+            <div class="column {{ product.css_class }}">
+              <a href="{{ product.url }}">
+                <img src="{{ product.image | product_image_url size: theme.product_image_size }}" alt="Image of {{ product.name | escape }}">
+                <h4>{{ product.name }}</h4>
+                <div class="price">{{ product.default_price | money_with_sign }}</div>
+                {% if product.on_sale %}
+                  <div class="sale">On Sale</div>
+                {% endif %}
+              </a>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+
+      {{ paginate | default_pagination }}
+    </section>
+  {% else %}
+    <p>No products found.</p>
+  {% endif %}
+{% endpaginate %}
