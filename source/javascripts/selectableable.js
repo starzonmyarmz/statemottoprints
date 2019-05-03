@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const select = document.getElementById('options')
+  const select = document.getElementById('')
 
   if (!select) return
 
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
       fieldset.appendChild(label)
     }
 
-    document.body.appendChild(fieldset)
+    document.getElementById('product-options').appendChild(fieldset)
     fieldset.querySelector('input').checked = true
   }
 })

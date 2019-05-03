@@ -1,5 +1,3 @@
-@import 'config'
-
 *, *:before, *:after
   box-sizing: border-box
 
@@ -13,71 +11,93 @@ html
   text-rendering: optimizeLegibility
 
 body
-  margin: 0
-
-header
-  background: #fff
-  padding: 25px 0
-  position: sticky
-  top: 0
-  z-index: 1000
-
-#logo
-  display: inline-block
-
-.left
-  align-items: center
   display: flex
+  flex-direction: column
+  margin: 0
+  min-height: 100vh
 
-.navigation
-  display: inline-block
-  margin-left: 40px
+main
+  flex: 1
+  margin-top: 0.25rem
 
-.description
-  color: #888
-  display: block
-  font-size: 0.9rem
-  margin-bottom: 20px
+section
+  margin-bottom: 4rem
+
+a
+  color: #46cdcf
 
 img, svg
   vertical-align: middle
 
-nav ul
-  list-style: none
-  margin: 0
-  padding: 0
+header
+  background: #fff
+  padding: 1.25rem 0
+  position: sticky
+  top: 0
+  z-index: 1000
+  .row
+    align-items: center
+    margin: 0
+  .left
+    flex-grow: 0
+    flex-shrink: 1
+  .right
+    flex-grow: 1
+    flex-shrink: 0
+    margin-top: 0.4rem
+    padding-left: 2rem
 
-nav li
-  display: inline-block
-  margin-right: 30px
+.byline
+  color: #888
+  display: block
+  font-size: 0.9rem
+  margin-bottom: 1.5rem
 
-nav a
-  color: inherit
-  display: inline-block
-  font-size: 1.15rem
-  font-weight: 500
-  text-decoration: none
+
+.navigation
+  align-items: center
+  display: flex
+  justify-content: space-between
+  a
+    color: inherit
+    display: inline-block
+    font-size: 1.15rem
+    font-weight: 500
+    margin-right: 1.5rem
+    text-decoration: none
+
+
+
+
+
+
 
 #search
-  background-image: url("data:image/svg+xml;utf8,")
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="%23444"><path d="M13.1 14.5a8.1 8.1 0 1 1 1.4-1.4l3.2 3.2a1 1 0 0 1-1.4 1.4L13 14.5zm-.6-2.2A6 6 0 0 0 8.1 2a6.1 6.1 0 1 0 4.4 10.3z"/></svg>')
   background-repeat: no-repeat
-  background-position: 0 50%
-  border-color: transparent
+  background-position: 0.5rem 50%
+  border: 1px solid transparent
+  box-sizing: content-box
   cursor: pointer
   font-family: inherit
   font-size: 1.15rem
-  padding: 5px 0 5px 27px
+  font-weight: 500
+  padding: 5px 0 5px 1.85rem
   transition: all 0.2s
   width: 5.1ch
+  &::placeholder
+    color: #444
   &:focus, &:valid
     border: 1px solid #ccc
-    padding-right: 5px
+    padding-right: 0.5rem
     width: 250px
+    &::placeholder
+      color: #bbb
 
 footer
   background: #efefef
   color: #888
-  padding: 40px 0
+  padding: 2rem 0
   text-align: center
 
 
@@ -85,101 +105,56 @@ footer
   margin: 0 auto
   width: 1100px
 
-header .wrapper
-  align-items: center
-  display: flex
-  justify-content: space-between
+.empty
+  background: #eee
+  border: 1px solid #ddd
+  padding: 6rem
+  text-align: center
+
+
+h3
+  font-size: 2rem
+  margin: 0 0 1rem
 
 h2
   margin-bottom: 2rem
 
-
-// a
-//   color: #72C29B
-//   text-decoration: none
-//   &:hover
-//     color: #60AA85
-
-// header
-//   border-bottom: $border
-//   font-family: #{"{{ theme.header_font | font_family }}"}
-//   margin-bottom: $marginSize
-//   padding-bottom: $marginSize
-//   text-align: center
-//
-//   a
-//     color: #666
-//     font-size: 2.5em
-//
-//     &:hover
-//       color: #333
-
-// h1, h2, h3, h4, h5
-//   font-family: #{"{{ theme.header_font | font_family }}"}
-//
-// div.wrap
-//   display: table
-//   width: 100%
-
-// aside
-//   border-right: $border
-//   display: table-cell
-//   padding-right: $marginSize
-//   width: 20%
-//
-//   section
-//     margin-bottom: 1.5em
-//
-//   ul
-//     margin-bottom: 1.5em
-//     margin-top: 0
-//
-//     li
-//       margin-bottom: .3em
-//
-//       a
-//         color: #999
-//         font-size: .9em
-//
-//         &:hover
-//           color: #333
-//
-//   cite a
-//     background: url(#{"{{ 'badge.png' | theme_image_url }}"}) no-repeat
-//     border: none
-//     display: block
-//     height: 23px
-//     overflow: hidden
-//     text-indent: 100%
-//     width: 79px
-//     white-space: nowrap
-//
-// section.content
-//   display: table-cell
-//   padding-left: $marginSize
-//   width: 80%
-
-// form
-//   li
-//     margin-bottom: 1.2em
-//
-//   label
-//     display: block
-//     margin-bottom: .2em
-//
-//   input,
-//   textarea
-//     border: 1px solid #ddd
-//     padding: 5px
-//     width: 350px
+.cart-count
+  background: #46cdcf
+  color: #fff
+  display: inline-block
+  font-size: 0.6rem
+  font-weight: 600
+  line-height: 1.5
+  padding: 0 0.25rem
+  position: relative
+  top: -0.5rem
 
 
-.errors
-  border-top: 1px soldi #A65A5A
-  margin-bottom: 3em
+.footer-social
+  background: #888
+  border-radius: 48px
+  color: #fff
+  display: inline-block
+  height: 48px
+  line-height: 46px
+  margin: 0 0.2rem
+  text-align: center
+  transition: all 0.2s
+  width: 48px
+  &:hover, &:focus
+    background: #444
 
+.footer-email
+  color: inherit
+
+
+.page-errors
+  background: #fc324a
+  color: #fff
+  font-weight: 500
+  list-style: none
+  margin: 2rem 0
+  padding: 0
   li
-    background: #D97576
-    border-bottom: 1px soldi #A65A5A
-    color: #fff
-    padding: 3px 10px
+    padding: 0.75rem 1rem
