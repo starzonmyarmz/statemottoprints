@@ -16,7 +16,7 @@
   </head>
 
   <body id="page-{{ page.permalink }}" class="page-{{ page.category }}">
-    <header>
+    <header id="site-header">
       <div class="wrapper">
         <div class="row">
           <div class="left">
@@ -70,17 +70,15 @@
       {% endif %}
 
       {% if page.category == 'custom' %}
-        <div class="wrapper">
-          <section>
-            {{ page_content | paragraphs }}
-          </section>
-        </div>
+        <section class="wrapper mt-2 mb-4">
+          {{ page_content | paragraphs }}
+        </section>
       {% else %}
         {{ page_content }}
       {% endif %}
     </main>
 
-    <footer>
+    <footer id="site-footer">
       <div class="wrapper">
         <div>
           <p>

@@ -18,11 +18,12 @@
  * Here we're including a 3rd-party stylesheet we put in stylesheets/vendor written in normal CSS,
  * as well as a few custom Sass stylesheets we've written for different areas of the store
  *
+ *= require stylesheets/base
+ *= require stylesheets/cart
  *= require stylesheets/grids
  *= require stylesheets/home
  *= require stylesheets/layout
- *= require stylesheets/products
  *= require stylesheets/product
- *= require stylesheets/cart
- *= require stylesheets/grids
+ *= require stylesheets/products
+ *= require stylesheets/utilities
  */

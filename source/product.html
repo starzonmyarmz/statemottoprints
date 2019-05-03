@@ -1,4 +1,4 @@
-<div class="wrapper">
+<div class="wrapper mt-2 mb-4">
   <div class="row">
     <section class="col-8 product-images">
       {% if product.images.size > 1 %}
@@ -16,7 +16,7 @@
     </section>
 
     <section class="col-4 product-details">
-      <h1 class="product-title">{{ page.name }}</h1>
+      <h1 class="product-title mb-1">{{ page.name }}</h1>
 
       {% if product.description != blank %}
         <div class="product-description">
