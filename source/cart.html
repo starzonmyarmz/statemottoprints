@@ -1,42 +1,72 @@
-<div class="wrapper mt-2 mb-4">
-  {% if cart.items != blank %}
+{% if cart.items != blank %}
+  <section class="wrapper-small mt-2 mb-4">
     <form method="post" action="/cart">
-      <ul class="unstyled">
-        {% for item in cart.items %}
-          <li>
-            <a href="{{ item.product.url }}">
-              <img src="{{ item.product.image | product_image_url size:"thumb" }}">
-            </a>
-            <h2>
-              <a href="{{ item.product.url }}">
-                {{ item.product.name }}
-                {% unless item.product.has_default_option %}
-                  <em>{{ item.option.name }}</em>
-                {% endunless %}
-              </a>
-            </h2>
-            <p>
-              {{ item | item_quantity_input }}
-              {{ item.price | money_with_sign }}
-              <button type="button" data-remove>
-                &times;
-              </button>
-            </p>
-          </li>
-        {% endfor %}
-      </ul>
+      <table id="cart">
+        <tbody>
+          {% for item in cart.items %}
+            <tr class="cart-item">
+              <td class="cart-image">
+                <a href="{{ item.product.url }}">
+                  <img src="{{ item.product.image | product_image_url size:"thumb" }}">
+                </a>
+              </td>
 
-      <p>
-        <strong>Subtotal</strong>
-        <span>{{ cart.subtotal | money_with_sign }}</span>
-      </p>
-      <button type="submit" name="checkout" title="Checkout">Checkout</button>
+              <td>
+                <a href="{{ item.product.url }}">
+                  <h4 class="m-0">
+                    {{ item.product.name }}
+                  </h4>
+
+                  {% unless item.product.has_default_option %}
+                    {{ item.option.name }}
+                  {% endunless %}
+                </a>
+              </td>
+
+
+              <td class="cart-quantity">
+                {{ item | item_quantity_input }}
+              </td>
+
+              <td class="cart-price">
+                {{ item.price | money_with_sign | remove: ".00" }}
+              </td>
+
+              <td class="cart-actions">
+                <button type="button" class="cart-remove" aria-label="Remove item from cart" data-remove>
+                  <svg width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" aria-hidden="true">
+                    <path  d="M7 7l10 10M17 7L7 17"/>
+                  </svg>
+                </button>
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td colspan="3" class="cart-subtotal-label">
+              Subtotal
+            </td>
+            <td class="cart-subtotal-price">
+              {{ cart.subtotal | money_with_sign | remove: ".00" }}
+            </td>
+            <td></td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <div class="cart-footer-actions mt-2">
+        <a href="/products" class="cart-shop">← Continue Shopping</a>
+        <button type="submit" name="checkout" class="cart-checkout">Checkout Now</button>
+      </div>
     </form>
-
-  {% else %}
+  </section>
+{% else %}
+  <div class="wrapper mt-2 mb-4">
     <section class="empty">
       <h3>Your cart is empty!</h3>
       Sounds like a good time to <a href="/">start shopping</a>!
     </section>
-  {% endif %}
-</div>
+  </div>
+{% endif %}
