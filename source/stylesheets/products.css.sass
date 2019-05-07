@@ -1,3 +1,5 @@
+@import vars
+
 #products
   text-align: center
   .product
@@ -9,7 +11,7 @@
     padding-right: 1rem
     position: relative
     a
-      color: #444
+      color: $text
       display: block
       text-decoration: none
     img
@@ -18,7 +20,7 @@
       margin: 1rem 0 0.5rem
 
   .sale
-    background: #444
+    background: $text
     color: #fff
     line-height: 1
     padding: 5px
@@ -29,7 +31,7 @@
 
 
 #pagination
-  border-top: 1px solid #ccc
+  border-top: 1px solid $gray-light
   padding-top: 2rem
   a
     display: inline-block

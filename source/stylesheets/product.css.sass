@@ -1,3 +1,5 @@
+@import vars
+
 .product-images,
 .product-details
   padding: 0 20px
@@ -12,8 +14,6 @@
   flex: 0 0 33.333%
   max-width: 33.333%
 
-
-
 .product-thumbnails
   flex: 0 1 0
   padding-right: 20px
@@ -26,12 +26,12 @@
   margin-bottom: 1rem
   opacity: 0.6
   padding: 0
-  transition: opacity 0.2s
+  transition: opacity $duration
   width: 64px
   &:hover, &:focus
     opacity: 1
   &.selected
-    border: 1px solid #888
+    border: 1px solid $text-light
     opacity: 1
     padding: 1px
 
@@ -46,7 +46,7 @@
     font-size: 1.1rem
     margin: 0 0 1rem
   p:last-child
-    color: #888
+    color: $text-light
     font-size: 0.9rem
     margin: 0 0 2rem
 
@@ -62,7 +62,7 @@
   padding-right: 2.5rem
 
 #add-to-cart
-  background: #46cdcf
+  background: $primary
   border: 0
   color: #fff
   cursor: pointer
@@ -71,19 +71,19 @@
   font-size: 1.3rem
   font-weight: 800
   padding: 1rem 1.5rem
-  transition: all 0.2s
+  transition: all $duration
   &:hover, &:focus
-    background: #13a4a8
+    background: $primary-darken
 
 .product-share
-  border-top: 1px solid #bbb
+  border-top: 1px solid $gray-light
   padding-top: 1rem
   text-align: center
   a
-    color: #888
+    color: $text-light
     display: inline-block
     margin: 0 0.5rem
-    transition: all 0.2s
+    transition: all $duration
     text-decoration: none
     &:hover, &:focus
-      color: #444
+      color: $text

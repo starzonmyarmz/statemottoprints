@@ -1,3 +1,5 @@
+@import vars
+
 #site-header
   background: #fff
   box-shadow: 0 1px 0 rgba(#000, 0.15)
@@ -30,13 +32,13 @@
     text-decoration: none
 
 .byline
-  color: #888
+  color: $text-light
   display: block
   font-size: 0.9rem
   margin-bottom: 1.5rem
 
 .cart-count
-  background: #46cdcf
+  background: $primary
   color: #fff
   display: inline-block
   font-size: 0.6rem
@@ -47,7 +49,7 @@
   top: -0.5rem
 
 #search
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="%23444"><path d="M13.1 14.5a8.1 8.1 0 1 1 1.4-1.4l3.2 3.2a1 1 0 0 1-1.4 1.4L13 14.5zm-.6-2.2A6 6 0 0 0 8.1 2a6.1 6.1 0 1 0 4.4 10.3z"/></svg>')
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='%23444'><path d='M13.1 14.5a8.1 8.1 0 1 1 1.4-1.4l3.2 3.2a1 1 0 0 1-1.4 1.4L13 14.5zm-.6-2.2A6 6 0 0 0 8.1 2a6.1 6.1 0 1 0 4.4 10.3z'/></svg>")
   background-repeat: no-repeat
   background-position: 0.5rem 50%
   border: 1px solid transparent
@@ -57,27 +59,27 @@
   font-size: 1.15rem
   font-weight: 500
   padding: 5px 0 5px 1.85rem
-  transition: all 0.2s
+  transition: all $duration
   width: 5.1ch
   &::placeholder
-    color: #444
+    color: $text
   &:focus, &:valid
-    border: 1px solid #ccc
+    border: 1px solid $gray-light
     padding-right: 0.5rem
     width: 250px
     &::placeholder
-      color: #bbb
+      color: $gray-light
 
 
 
 #site-footer
-  background: #efefef
-  color: #888
+  background: $gray-lighter
+  color: $text-light
   padding: 2rem 0
   text-align: center
 
 .footer-social
-  background: #888
+  background: $text-light
   border-radius: 48px
   color: #fff
   display: inline-block
@@ -85,10 +87,10 @@
   line-height: 46px
   margin: 0 0.2rem
   text-align: center
-  transition: all 0.2s
+  transition: all $duration
   width: 48px
   &:hover, &:focus
-    background: #444
+    background: $text
 
 .footer-email
   color: inherit
