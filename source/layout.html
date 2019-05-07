@@ -70,7 +70,8 @@
       {% endif %}
 
       {% if page.category == 'custom' %}
-        <section class="wrapper mt-2 mb-4">
+        <section class="wrapper-small mt-2 mb-4">
+          <h2 class="text-center">{{ page.name }}</h2>
           {{ page_content | paragraphs }}
         </section>
       {% else %}
