@@ -20,10 +20,14 @@
           {% endfor %}
         </div>
 
-        {{ paginate | default_pagination }}
+        <div class="mobile-padding">
+          {{ paginate | default_pagination }}
+        </div>
       {% else %}
-        <div class="empty">
-          <p>Sorry, but there are products found matching your search.</p>
+        <div class="mobile-padding">
+          <div class="empty">
+            <p>Sorry, but there are products found matching your search.</p>
+          </div>
         </div>
       {% endif %}
     {% endpaginate %}
