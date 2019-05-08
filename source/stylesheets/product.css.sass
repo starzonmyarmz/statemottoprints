@@ -1,18 +1,15 @@
 @import vars
 
+#page-product main .row
+  flex-direction: column
+
 .product-images,
 .product-details
-  padding: 0 20px
+  padding: 0 1rem
   position: relative
 
 .product-images
-  display: flex
-  flex: 0 0 66.666%
-  max-width: 66.666%
-
-.product-details
-  flex: 0 0 33.333%
-  max-width: 33.333%
+  margin-bottom: 2rem
 
 .product-thumbnails
   flex: 0 1 0
@@ -87,3 +84,17 @@
     text-decoration: none
     &:hover, &:focus
       color: $text
+
+@media (min-width: $tablet)
+  #page-product main .row
+    flex-direction: row
+
+  .product-images
+    display: flex
+    flex: 0 0 66.666%
+    max-width: 66.666%
+    margin-bottom: 0
+
+  .product-details
+    flex: 0 0 33.333%
+    max-width: 33.333%
