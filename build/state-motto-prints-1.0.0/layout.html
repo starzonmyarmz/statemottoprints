@@ -51,7 +51,7 @@
                   </svg>
                 </a>
 
-                {% for page in pages.all limit: theme.nav_items %}
+                {% for page in pages.all %}
                   {{ page | link_to }}
                 {% endfor %}
 
