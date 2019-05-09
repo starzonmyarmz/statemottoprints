@@ -1,13 +1,15 @@
+build/*/images
+tmp
+log
+
 .bundle
 .DS_Store
 .sass-cache
 .dugway.json
-
-build
-tmp
-log
+screenshot.jpg
 todo
 
 *.tmproj
 *.esproj
 *.sublime*
+*.zip
