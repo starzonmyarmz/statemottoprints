@@ -6,6 +6,7 @@ log
 .DS_Store
 .sass-cache
 .dugway.json
+settings.json
 screenshot.jpg
 todo
 
