@@ -45,7 +45,6 @@
   p:last-child
     color: $text-light
     font-size: 0.9rem
-    margin: 0 0 2rem
 
 .product-footer
   align-items: center
@@ -70,7 +69,7 @@
   padding: 1rem 1.5rem
   transition: all $duration
   &:hover, &:focus
-    background: $primary-darken
+    background: $primary-darker
 
 .product-share
   border-top: 1px solid $gray-light
@@ -98,3 +97,56 @@
   .product-details
     flex: 0 0 33.333%
     max-width: 33.333%
+
+
+
+// Selectableable
+
+.options-are-hidden
+  display: none
+
+.selectableable_fieldset
+  display: flex
+  flex-wrap: wrap
+  margin: 0 -5px 1rem
+
+.selectableable_legend
+  flex: 0 0 100%
+  padding: 0 5px
+  margin-bottom: 0.5rem
+  &:before
+    content: 'Select a '
+
+.selectableable_choice
+  flex-grow: 1
+  flex-shrink: 0
+  margin-bottom: 10px
+  padding: 0 5px
+  input
+    opacity: 0
+    pointer-events: none
+    position: absolute
+  label
+    align-items: center
+    background: #fff
+    border: 1px solid $gray-light
+    color: $text-light
+    cursor: pointer
+    display: flex
+    min-height: 48px
+    justify-content: center
+    position: relative
+    &:hover
+      border-color: $gray-medium
+  input:checked + label
+    background: $primary-lighter
+    border-color: $primary
+    color: $text
+
+.selectableable_Size .selectableable_choice
+  flex-basis: 50%
+  max-width: 50%
+
+.selectableable_Color .selectableable_choice
+  flex-basis: 33.33%
+  max-width: 33.33%
