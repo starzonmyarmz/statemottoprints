@@ -1,17 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const select = document.getElementById('')
+  const select = document.getElementById('options')
+  const sevent = new Event('change')
 
-  if (!select) return
-
-
+  // Exit if the product select element doesn't exist
+  // or if it doesn't contain comma-separated values
+  if (!select || !select.querySelector('option').innerText.includes(',')) return
 
   // Hide the #options element
   select.classList.add('options-are-hidden')
 
-
-
   // Build an object with all the available key/value pairs
-
   let lookup = {}
   let groups = {}
 
@@ -33,10 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     lookup[lookup_key.join(', ')] = opt.value
   })
 
-
-
   // Build the html
-
   let fieldsets = []
 
   for (let key of Object.keys(groups)) {
@@ -67,6 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
       input.addEventListener('click', () => {
         let key = fieldsets.map((fieldset) => fieldset.querySelector('input:checked').value).join(', ')
         select.value = lookup[key]
+        document.getElementById('options').dispatchEvent(sevent)
       })
 
       label.className = 'selectableable_label'
