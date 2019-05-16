@@ -71,6 +71,23 @@
   &:hover, &:focus
     background: $primary-darker
 
+#options
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='8' viewBox='0 0 14 8' fill='none' stroke='%23444' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><polyline points='1 1 7 7 13 1'/></svg>")
+  background-position: calc(100% - 0.75rem) 50%
+  background-repeat: no-repeat
+  background-color: $primary-lighter
+  border: 1px solid $primary
+  border-radius: 0
+  color: $text
+  font-family: inherit
+  font-size: 1rem
+  padding: 0 0.75rem
+  height: 48px
+  width: 100%
+
 .product-share
   border-top: 1px solid $gray-light
   padding-top: 1rem
@@ -84,22 +101,6 @@
     &:hover, &:focus
       color: $text
 
-@media (min-width: $tablet)
-  #page-product main .row
-    flex-direction: row
-
-  .product-images
-    display: flex
-    flex: 0 0 66.666%
-    max-width: 66.666%
-    margin-bottom: 0
-
-  .product-details
-    flex: 0 0 33.333%
-    max-width: 33.333%
-
-
-
 // Selectableable
 
 .options-are-hidden
@@ -107,6 +108,7 @@
 
 .selectableable_fieldset
   display: flex
+  flex-direction: column
   flex-wrap: wrap
   margin: 0 -5px 1rem
 
@@ -121,7 +123,6 @@
   flex-grow: 1
   flex-shrink: 0
   margin-bottom: 10px
-  max-width: 50%
   padding: 0 5px
   input
     opacity: 0
@@ -144,10 +145,30 @@
     border-color: $primary
     color: $text
 
-.selectableable_Size .selectableable_choice
+.selectableable_size .selectableable_choice
   flex-basis: 50%
   max-width: 50%
 
-.selectableable_Color .selectableable_choice
+.selectableable_color .selectableable_choice
   flex-basis: 33.33%
   max-width: 33.33%
+
+
+@media (min-width: $tablet)
+  #page-product main .row
+    flex-direction: row
+
+  .product-images
+    display: flex
+    flex: 0 0 66.666%
+    max-width: 66.666%
+    margin-bottom: 0
+
+  .product-details
+    flex: 0 0 33.333%
+    max-width: 33.333%
+
+  // Selectableable
+
+  .selectableable_fieldset
+    flex-direction: row
