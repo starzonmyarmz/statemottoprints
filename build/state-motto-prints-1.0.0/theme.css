@@ -444,7 +444,6 @@ hr {
 .product-description p:last-child {
   color: #888888;
   font-size: 0.9rem;
-  margin: 0 0 2rem;
 }
 
 .product-footer {
@@ -476,6 +475,24 @@ hr {
   background: #13a4a8;
 }
 
+#options {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='8' viewBox='0 0 14 8' fill='none' stroke='%23444' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><polyline points='1 1 7 7 13 1'/></svg>");
+  background-position: calc(100% - 0.75rem) 50%;
+  background-repeat: no-repeat;
+  background-color: #d5f0f0;
+  border: 1px solid #46cdcf;
+  border-radius: 0;
+  color: #444444;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0 0.75rem;
+  height: 48px;
+  width: 100%;
+}
+
 .product-share {
   border-top: 1px solid #cccccc;
   padding-top: 1rem;
@@ -490,6 +507,67 @@ hr {
 }
 .product-share a:hover, .product-share a:focus {
   color: #444444;
+}
+
+.options-are-hidden {
+  display: none;
+}
+
+.selectableable_fieldset {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 -5px 1rem;
+}
+
+.selectableable_legend {
+  flex: 0 0 100%;
+  padding: 0 5px;
+  margin-bottom: 0.5rem;
+}
+.selectableable_legend:before {
+  content: "Select a ";
+}
+
+.selectableable_choice {
+  flex-grow: 1;
+  flex-shrink: 0;
+  margin-bottom: 10px;
+  padding: 0 5px;
+}
+.selectableable_choice input {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+}
+.selectableable_choice label {
+  align-items: center;
+  background: white;
+  border: 1px solid #cccccc;
+  color: #888888;
+  cursor: pointer;
+  display: flex;
+  min-height: 48px;
+  justify-content: center;
+  position: relative;
+}
+.selectableable_choice label:hover {
+  border-color: #888888;
+}
+.selectableable_choice input:checked + label {
+  background: #d5f0f0;
+  border-color: #46cdcf;
+  color: #444444;
+}
+
+.selectableable_size .selectableable_choice {
+  flex-basis: 50%;
+  max-width: 50%;
+}
+
+.selectableable_color .selectableable_choice {
+  flex-basis: 33.33%;
+  max-width: 33.33%;
 }
 
 @media (min-width: 800px) {
@@ -507,6 +585,10 @@ hr {
   .product-details {
     flex: 0 0 33.333%;
     max-width: 33.333%;
+  }
+
+  .selectableable_fieldset {
+    flex-direction: row;
   }
 }
 #products {
@@ -626,11 +708,3 @@ hr {
     display: none !important;
   }
 }
-
-
-
-
-
-
-
-

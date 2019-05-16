@@ -24,6 +24,8 @@
         </div>
       {% endif %}
 
+      <hr>
+
       <form method="post" action="/cart">
         {% if product.has_default_option %}
           {{ product.option | hidden_option_input }}
