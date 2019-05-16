@@ -18,17 +18,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const hyphen = /\s*-\s*/g
   const cents = /\s*.00/g
 
-  let new_price
+  // Set data-price to price of item
+  document.querySelector('#options option').dataset.price = price_element.innerText
+  document.querySelectorAll('#options option:not(:first-child)').forEach((opt) => {
+    opt.dataset.price = opt.innerText.split(hyphen)[1].split(cents)[0]
+    opt.innerText = opt.innerText.split(hyphen)[0]
+  })
 
-  price_element.dataset.basePrice = price_element.innerText
-
+  // Change price display when selecting different items
   document.getElementById('options').addEventListener('change', (event) => {
-    new_price = event.currentTarget.selectedOptions[0].innerHTML
-
-    if (new_price.split(hyphen)[1] == null) {
-      price_element.innerHTML = price_element.dataset.basePrice
-    } else {
-      price_element.innerHTML = new_price.split(hyphen)[1].split(cents)[0]
-    }
+    price_element.innerHTML = event.currentTarget.selectedOptions[0].dataset.price
   })
 })
