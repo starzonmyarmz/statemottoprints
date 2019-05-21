@@ -199,6 +199,10 @@ hr {
 .state-nh {
   background: url("https://raw.githubusercontent.com/starzonmyarmz/statemottoprints/master/source/images/hero_nh.jpg") 50% 50% no-repeat;
 }
+
+.state-ny {
+  background: url("https://raw.githubusercontent.com/starzonmyarmz/statemottoprints/master/source/images/hero_ny.jpg") 50% 50% no-repeat;
+}
 #site-header {
   background: white;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
