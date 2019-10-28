@@ -26,11 +26,16 @@
 
       <hr>
 
-      <form method="post" action="/cart">
+      <form method="post" action="/cart" accept-charset="utf8">
+        <input type="hidden" name="utf8" value="✓">
+
         {% if product.has_default_option %}
           {{ product.option | hidden_option_input }}
         {% else %}
           {{ product.options | options_select id: "options" }}
+          <div id="default-price" hidden>
+            {{ product.default_price | money_with_sign | remove: ".00" }}
+          </div>
           <div id="product-options"></div>
         {% endif %}
 
