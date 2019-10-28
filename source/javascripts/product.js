@@ -21,8 +21,12 @@ document.addEventListener('DOMContentLoaded', () => {
   // Set data-price to price of item
   document.querySelector('#options option').dataset.price = price_element.innerText
   document.querySelectorAll('#options option:not(:first-child)').forEach((opt) => {
-    opt.dataset.price = opt.innerText.split(hyphen)[1].split(cents)[0]
-    opt.innerText = opt.innerText.split(hyphen)[0]
+    if (opt.innerText.includes('$')) {
+      opt.dataset.price = opt.innerText.split(hyphen)[1].split(cents)[0]
+      opt.innerText = opt.innerText.split(hyphen)[0]
+    } else {
+      opt.dataset.price = document.getElementById('default-price').innerText
+    }
   })
 
   // Change price display when selecting different items
