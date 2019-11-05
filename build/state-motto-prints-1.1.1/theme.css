@@ -441,11 +441,12 @@ hr {
   width: 100%;
 }
 
-.product-description p:first-child {
+.product-description {
   font-size: 1.1rem;
   margin: 0 0 1rem;
 }
-.product-description p:last-child {
+
+.product-fine-print {
   color: #888888;
   font-size: 0.9rem;
 }
