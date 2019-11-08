@@ -217,8 +217,8 @@ hr {
   margin: 0;
 }
 #site-header img {
-  height: 72px;
-  width: 108px;
+  height: 64px;
+  width: 96px;
 }
 
 .navigation {
@@ -230,7 +230,7 @@ hr {
   padding: 1rem;
   position: fixed;
   right: 0;
-  top: 104px;
+  top: 96px;
 }
 .navigation a {
   color: inherit;
@@ -295,7 +295,7 @@ hr {
 
 @media (min-width: 800px) {
   #site-header {
-    padding: 2rem 1rem;
+    padding: 1.5rem 1rem;
   }
   #site-header .left {
     flex-grow: 0;
@@ -316,7 +316,7 @@ hr {
     color: #888888;
     display: block;
     font-size: 0.9rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
   }
 
   .toggle-navigation {
