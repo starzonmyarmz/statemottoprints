@@ -1,0 +1,98 @@
+<style>
+  #hero {
+    background: url('https://rawcdn.githack.com/starzonmyarmz/statemottoprints/d63d7fafebb29029cd67c9b3e3488532902d91c5/source/images/hero_new_smp_tees_bg.jpg') 0 100% no-repeat;
+    background-size: cover;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  #hero img {
+    filter: invert(100%) sepia(100%) saturate(0%) drop-shadow(0 3px 7px rgba(0, 0, 0, 0.5));
+    max-width: 400px;
+    width: 100%;
+  }
+
+  #hero p {
+    color: #fff;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    text-shadow: 0 3px 7px rgba(0, 0, 0, 0.5)
+  }
+
+  #hero a {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    display: inline-block;
+    line-height: 1;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    transition: all 0.2s;
+    width: 100%;
+  }
+
+  #hero a:hover {
+    background: #46cdcf;
+  }
+
+  @media (min-width: 500px) {
+    #hero a {
+      width: auto;
+    }
+  }
+
+  @media (min-width: 840px) {
+    #hero {
+      align-items: center;
+      display: flex;
+      height: 65vh;
+      justify-content: flex-end;
+      padding: 4rem;
+    }
+
+    #hero img {
+      filter: none;
+    }
+
+    #hero p {
+      color: #444;
+      text-shadow: none;
+    }
+
+    #hero div {
+      width: calc(50vw - 4rem);
+    }
+  }
+</style>
+
+<section id="hero" class="mb-4">
+  <div>
+    <img src="https://rawcdn.githack.com/starzonmyarmz/statemottoprints/d63d7fafebb29029cd67c9b3e3488532902d91c5/source/images/new_smp_tees.png" alt="New State Motto Tees" aria-label="New State Motto Tees">
+    <p class="mt-2 mb-2">Featuring all 50 state mottos. Printed on <br class="desktop-only" aria-hidden="true"> high-quality tri-blend Bella+Canvas tees.</p>
+    <a href="/category/tees">Shop All Tees</a>
+  </div>
+</section>
+
+<section id="products" class="mb-2">
+  <h2>Featured Products</h2>
+
+  <div class="wrapper">
+    <div class="row">
+      {% for product in products.all %}
+        {% for category in product.categories %}
+          {% if category.name == 'Featured' %}
+            <div class="product">
+              <a href="{{ product.url }}">
+                <img src="{{ product.image | product_image_url | constrain: '600' }}" alt="Image of {{ product.name | escape }}" loading="lazy">
+                <h5>{{ product.name }}</h5>
+                <div class="price">{{ product.default_price | money_with_sign | remove: ".00" }}</div>
+                {% if product.on_sale %}
+                  <div class="sale">On Sale</div>
+                {% endif %}
+              </a>
+            </div>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
