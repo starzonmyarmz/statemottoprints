@@ -10,7 +10,11 @@
 
     <link rel="icon" href="https://rawcdn.githack.com/starzonmyarmz/statemottoprints/125810757289a711dfbada053723c50ef5401999/source/images/favicon.ico">
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,800,900" rel="stylesheet">
+    {{ if page.full_url contains '127.0.0.1:9292' }}
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+    {{ endif }}
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400i,500i" rel="stylesheet">
+
     <link href="{{ theme | theme_css_url }}" rel="stylesheet">
 
     <script src="{{ theme | theme_js_url }}"></script>
@@ -125,7 +129,7 @@
       <div class="wrapper">
         <div>
           <p>
-            <a href="https://instagram.com/sm_prints/" target="_blank" rel="noopener" class="footer-social" aria-label="State Motto Prints on Instagram">
+            <a href="https://instagram.com/statemottoprints/" target="_blank" rel="noopener" class="footer-social" aria-label="State Motto Prints on Instagram">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path d="M12 0H7C5.9.2 5 .4 4.2.7c-.7.3-1.4.7-2 1.4S.8 3.4.5 4.1c-.3.8-.5 1.7-.5 3a83.6 83.6 0 0 0 .5 12.8c.3.7.7 1.4 1.4 2 .7.8 1.3 1.2 2.1 1.5.8.3 1.7.5 3 .5a83.6 83.6 0 0 0 12.8-.5c.7-.3 1.4-.7 2-1.4.8-.7 1.2-1.3 1.5-2.1.3-.8.5-1.7.5-3a83.6 83.6 0 0 0-.5-12.8c-.3-.7-.7-1.4-1.4-2-.7-.8-1.3-1.2-2.1-1.5-.8-.3-1.7-.5-3-.5L12 0zm0 2.2h4.8c1.2 0 1.9.3 2.3.4.5.3 1 .5 1.4 1 .4.4.6.8.9 1.3.1.4.3 1 .4 2.2a84 84 0 0 1-.5 12c-.2.5-.4 1-.9 1.4-.4.4-.8.6-1.3.9-.5.1-1.1.3-2.3.4a84.5 84.5 0 0 1-12-.5c-.5-.2-.9-.4-1.3-.9-.4-.4-.7-.8-.9-1.3-.2-.5-.4-1.1-.4-2.3V12 7c0-1.1.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.3 2.2-.4H12zm0 3.6a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm7.8-10.4a1.4 1.4 0 1 1-2.8 0 1.4 1.4 0 0 1 2.8 0z"/>
               </svg>
