@@ -1,8 +1,74 @@
-<section id="hero" class="state-ny mb-4">
+<style>
+  #hero {
+    background: url('images/hero_new_smp_tees_bg.jpg') 0 100% no-repeat;
+    background-size: cover;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  #hero img {
+    filter: invert(100%) sepia(100%) saturate(0%) drop-shadow(0 3px 7px rgba(0, 0, 0, 0.5));
+    max-width: 400px;
+    width: 100%;
+  }
+
+  #hero p {
+    color: #fff;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    text-shadow: 0 3px 7px rgba(0, 0, 0, 0.5)
+  }
+
+  #hero a {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    display: inline-block;
+    line-height: 1;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    transition: all 0.2s;
+    width: 100%;
+  }
+
+  #hero a:hover {
+    background: #46cdcf;
+  }
+
+  @media (min-width: 500px) {
+    #hero a {
+      width: auto;
+    }
+  }
+
+  @media (min-width: 840px) {
+    #hero {
+      align-items: center;
+      display: flex;
+      height: 65vh;
+      justify-content: end;
+      padding: 4rem;
+    }
+
+    #hero img {
+      filter: none;
+    }
+
+    #hero p {
+      color: revert;
+      text-shadow: none;
+    }
+
+    #hero div {
+      width: calc(50vw - 4rem);
+    }
+  }
+</style>
+
+<section id="hero" class="mb-4">
   <div>
-    <h1>Excelsior</h1>
-    <h2>New York State Motto</h2>
-    <a href="/products?search=new+york">Shop New York Prints</a>
+    <img src="images/new_smp_tees.png" alt="New State Motto Tees" aria-label="New State Motto Tees">
+    <p class="mt-2 mb-2">Featuring all 50 state mottos. Printed on <br class="desktop-only" aria-hidden="true"> high-quality tri-blend Bella+Canvas tees.</p>
+    <a href="/category/tees">Shop All Tees</a>
   </div>
 </section>
 
