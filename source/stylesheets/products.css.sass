@@ -9,6 +9,12 @@
     padding-left: 1rem
     padding-right: 1rem
     position: relative
+    img
+      opacity: 0.9
+      transition: transform $duration
+      &:hover
+        opacity: 1
+        transform: scale(1.05)
     @media (min-width: $tablet)
       flex: 0 0 33.33%
       max-width: 33.33%
