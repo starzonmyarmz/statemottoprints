@@ -7,7 +7,9 @@
             <tr class="cart-item">
               <td class="cart-image">
                 <a href="{{ item.product.url }}">
-                  <img src="{{ item.product.image | product_image_url size:"thumb" }}">
+                  {% for image in item.product.images %}
+                    <img src="{{ image | product_image_url size: "thumb" }}" alt="{{ item.product.name }}" hidden>
+                  {% endfor %}
                 </a>
               </td>
 
@@ -18,7 +20,7 @@
                   </h4>
 
                   {% unless item.product.has_default_option %}
-                    {{ item.option.name }}
+                    <span data-option>{{ item.option.name }}</span>
                   {% endunless %}
                 </a>
               </td>

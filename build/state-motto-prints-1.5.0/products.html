@@ -3,7 +3,7 @@
     <h2>Search Results</h2>
   {% endif %}
   <div class="wrapper">
-    {% paginate products from products.current by theme.products_per_page %}
+    {% paginate products from products.current by 30 %}
       {% if products != blank %}
         <div class="row">
           {% for product in products %}

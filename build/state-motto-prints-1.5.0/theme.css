@@ -204,7 +204,7 @@ hr {
 }
 
 #prints {
-  background: url("https://rawcdn.githack.com/starzonmyarmz/statemottoprints/921b35955f2ee52b8d7375bf555a72fe595780c4/source/images/hero_living_room.jpg") 75% 0 no-repeat;
+  background: url("images/hero_living_room.jpg") 75% 0 no-repeat;
 }
 #prints img {
   filter: drop-shadow(0 3px 7px rgba(255, 255, 255, 0.75));
@@ -212,7 +212,7 @@ hr {
 }
 
 #tees {
-  background: url("https://rawcdn.githack.com/starzonmyarmz/statemottoprints/921b35955f2ee52b8d7375bf555a72fe595780c4/source/images/hero_new_smp_tees_bg.jpg") 0 100% no-repeat;
+  background: url("images/hero_new_smp_tees_bg.jpg") 0 100% no-repeat;
 }
 #tees img {
   max-width: 400px;
@@ -808,3 +808,11 @@ hr {
     display: revert !important;
   }
 }
+
+
+
+
+
+
+
+
