@@ -34,3 +34,12 @@ document.addEventListener('DOMContentLoaded', () => {
     price_element.innerHTML = event.currentTarget.selectedOptions[0].dataset.price
   })
 })
+
+document.addEventListener('input', ({target}) => {
+  const input = target.closest('.selectableable_input')
+  if (!input) return
+  const color = input.value.toLowerCase()
+  document.querySelectorAll('button.product-thumbnail').forEach((button) => {
+    button.dataset.source.includes(color) ? button.click() : ''
+  })
+})
