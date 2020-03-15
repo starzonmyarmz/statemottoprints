@@ -1,0 +1,17 @@
+{
+  "name": "statemottoprints",
+  "version": "2.0.0",
+  "description": "",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/starzonmyarmz/statemottoprints.git"
+  },
+  "author": "Daniel Marino",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0"
+  }
+}
