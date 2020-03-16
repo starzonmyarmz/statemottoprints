@@ -8,20 +8,20 @@
     <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <link rel="icon" href="https://rawcdn.githack.com/starzonmyarmz/statemottoprints/125810757289a711dfbada053723c50ef5401999/source/images/favicon.ico">
+    <link rel="icon" href="/images/favicon.ico">
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,700" rel="stylesheet">
     <link href="/stylesheets/theme.css" rel="stylesheet">
 
-    <script src="theme.js"></script>
+    <script src="/javascripts/theme.js"></script>
   </head>
   <body>
     <header id="site-header">
       <div class="wrapper">
         <div class="row">
           <div class="left">
-            <a href="/" title="{{ store.name | escape }}">
-              <img src="https://raw.githubusercontent.com/starzonmyarmz/statemottoprints/master/source/images/logo.png" alt="{{ store.name }}" width="150" height="100">
+            <a href="/" title="{{ site.name }}">
+              <img src="/images/logo.png" alt="{{ site.name }} logo" width="150" height="100">
             </a>
           </div>
 
@@ -43,24 +43,8 @@
 
             <div class="navigation">
               <nav>
-                <!--
-                  <a class="navigation-link" href="/products">
-                    Products
-                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true">
-                      <polyline points="1 1 7 7 13 1"/>
-                    </svg>
-                  </a>
-                -->
-
-                {% for category in categories.active %}
-                  {% if category.name != 'Featured' %}
-                    {{ category | link_to }}
-                  {% endif %}
-                {% endfor %}
-
-                {% for page in pages.all %}
-                  {{ page | link_to }}
-                {% endfor %}
+                <a href="/products">Products</a>
+                <a href="/faqs">FAQs</a>
 
                 {# <a class="navigation-link" href="/cart">
                   Cart
@@ -98,7 +82,7 @@
     </header>
 
     <main class="content">
-      {{ content }}
+      {{ content | safe }}
     </main>
 
     <footer id="site-footer">
