@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ site.name }} &mdash; {{ title }}</title>
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="icon" href="https://rawcdn.githack.com/starzonmyarmz/statemottoprints/125810757289a711dfbada053723c50ef5401999/source/images/favicon.ico">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,700" rel="stylesheet">
+    <link href="/stylesheets/theme.css" rel="stylesheet">
+
+    <script src="theme.js"></script>
+  </head>
+  <body>
+    <header id="site-header">
+      <div class="wrapper">
+        <div class="row">
+          <div class="left">
+            <a href="/" title="{{ store.name | escape }}">
+              <img src="https://raw.githubusercontent.com/starzonmyarmz/statemottoprints/master/source/images/logo.png" alt="{{ store.name }}" width="150" height="100">
+            </a>
+          </div>
+
+          <div class="right">
+            <em class="byline">Hand-lettered US state mottos on printed goods</em>
+
+            <button type="button" class="toggle-navigation" aria-label="Toggle navigation" data-toggle-nav>
+              <div id="toggle-nav-menu">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true">
+                  <path d="M3 12h18M3 6h18M3 18h18"/>
+                </svg>
+              </div>
+              <div id="toggle-nav-x" hidden>
+                <svg width="28" height="28" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" aria-hidden="true">
+                  <path  d="M7 7l10 10M17 7L7 17"/>
+                </svg>
+              </div>
+            </button>
+
+            <div class="navigation">
+              <nav>
+                <!--
+                  <a class="navigation-link" href="/products">
+                    Products
+                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true">
+                      <polyline points="1 1 7 7 13 1"/>
+                    </svg>
+                  </a>
+                -->
+
+                {% for category in categories.active %}
+                  {% if category.name != 'Featured' %}
+                    {{ category | link_to }}
+                  {% endif %}
+                {% endfor %}
+
+                {% for page in pages.all %}
+                  {{ page | link_to }}
+                {% endfor %}
+
+                {# <a class="navigation-link" href="/cart">
+                  Cart
+                  {% if cart.item_count > 0 %}
+                    <span class="cart-count">{{ cart.item_count }}</span>
+                  {% endif %}
+                </a> #}
+
+                <hr class="mobile-only">
+
+                <a href="https://instagram.com/statemottoprints/" target="_blank" rel="noopener" class="mobile-only">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 0H7C5.9.2 5 .4 4.2.7c-.7.3-1.4.7-2 1.4S.8 3.4.5 4.1c-.3.8-.5 1.7-.5 3a83.6 83.6 0 0 0 .5 12.8c.3.7.7 1.4 1.4 2 .7.8 1.3 1.2 2.1 1.5.8.3 1.7.5 3 .5a83.6 83.6 0 0 0 12.8-.5c.7-.3 1.4-.7 2-1.4.8-.7 1.2-1.3 1.5-2.1.3-.8.5-1.7.5-3a83.6 83.6 0 0 0-.5-12.8c-.3-.7-.7-1.4-1.4-2-.7-.8-1.3-1.2-2.1-1.5-.8-.3-1.7-.5-3-.5L12 0zm0 2.2h4.8c1.2 0 1.9.3 2.3.4.5.3 1 .5 1.4 1 .4.4.6.8.9 1.3.1.4.3 1 .4 2.2a84 84 0 0 1-.5 12c-.2.5-.4 1-.9 1.4-.4.4-.8.6-1.3.9-.5.1-1.1.3-2.3.4a84.5 84.5 0 0 1-12-.5c-.5-.2-.9-.4-1.3-.9-.4-.4-.7-.8-.9-1.3-.2-.5-.4-1.1-.4-2.3V12 7c0-1.1.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.3 2.2-.4H12zm0 3.6a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm7.8-10.4a1.4 1.4 0 1 1-2.8 0 1.4 1.4 0 0 1 2.8 0z"/>
+                  </svg>
+                  <span class="valign-middle">Instagram</span>
+                </a>
+
+                <a href="https://twitter.com/sm_prints" target="_blank" rel="noopener" class="mobile-only">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M24 4.6c-1 .4-1.9.6-2.9.7a5 5 0 0 0 2.2-2.7c-1 .6-2 1-3.1 1.2-1-1-2.2-1.6-3.6-1.6a5 5 0 0 0-4.8 6 14 14 0 0 1-10.2-5c-.4.7-.6 1.5-.6 2.4a5 5 0 0 0 2.2 4.1c-.8 0-1.6-.2-2.3-.6A5 5 0 0 0 5 14a5 5 0 0 1-2.2 0 5 5 0 0 0 4.6 3.5 9.9 9.9 0 0 1-7.3 2 14 14 0 0 0 7.6 2.3c9 0 14-7.5 14-14V7A10 10 0 0 0 24 4.6z"/>
+                  </svg>
+                  <span class="valign-middle">Twitter</span>
+                </a>
+              </nav>
+
+              <hr class="mobile-only">
+
+              <form action="/products" method="get">
+                <input type="text" id="search" name="search" placeholder="Search" aria-label="Search" autocomplete="off" required>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="content">
+      {{ content }}
+    </main>
+
+    <footer id="site-footer">
+      <div class="wrapper">
+        <div>
+          <p>
+            <a href="https://instagram.com/statemottoprints/" target="_blank" rel="noopener" class="footer-social" aria-label="State Motto Prints on Instagram">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 0H7C5.9.2 5 .4 4.2.7c-.7.3-1.4.7-2 1.4S.8 3.4.5 4.1c-.3.8-.5 1.7-.5 3a83.6 83.6 0 0 0 .5 12.8c.3.7.7 1.4 1.4 2 .7.8 1.3 1.2 2.1 1.5.8.3 1.7.5 3 .5a83.6 83.6 0 0 0 12.8-.5c.7-.3 1.4-.7 2-1.4.8-.7 1.2-1.3 1.5-2.1.3-.8.5-1.7.5-3a83.6 83.6 0 0 0-.5-12.8c-.3-.7-.7-1.4-1.4-2-.7-.8-1.3-1.2-2.1-1.5-.8-.3-1.7-.5-3-.5L12 0zm0 2.2h4.8c1.2 0 1.9.3 2.3.4.5.3 1 .5 1.4 1 .4.4.6.8.9 1.3.1.4.3 1 .4 2.2a84 84 0 0 1-.5 12c-.2.5-.4 1-.9 1.4-.4.4-.8.6-1.3.9-.5.1-1.1.3-2.3.4a84.5 84.5 0 0 1-12-.5c-.5-.2-.9-.4-1.3-.9-.4-.4-.7-.8-.9-1.3-.2-.5-.4-1.1-.4-2.3V12 7c0-1.1.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.3 2.2-.4H12zm0 3.6a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm7.8-10.4a1.4 1.4 0 1 1-2.8 0 1.4 1.4 0 0 1 2.8 0z"/>
+              </svg>
+            </a>
+
+            <a href="https://twitter.com/sm_prints" target="_blank" rel="noopener" class="footer-social" aria-label="State Motto Prints on Twitter">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M24 4.6c-1 .4-1.9.6-2.9.7a5 5 0 0 0 2.2-2.7c-1 .6-2 1-3.1 1.2-1-1-2.2-1.6-3.6-1.6a5 5 0 0 0-4.8 6 14 14 0 0 1-10.2-5c-.4.7-.6 1.5-.6 2.4a5 5 0 0 0 2.2 4.1c-.8 0-1.6-.2-2.3-.6A5 5 0 0 0 5 14a5 5 0 0 1-2.2 0 5 5 0 0 0 4.6 3.5 9.9 9.9 0 0 1-7.3 2 14 14 0 0 0 7.6 2.3c9 0 14-7.5 14-14V7A10 10 0 0 0 24 4.6z"/>
+              </svg>
+            </a>
+          </p>
+
+          <p><a href="mailto:hello@statemottoprints.com" class="footer-email">hello@statemottoprints.com</a></p>
+          <p>Copyright © 2019 State Motto Prints. <br class="mobile-only"> All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
