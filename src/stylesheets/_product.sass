@@ -1,0 +1,172 @@
+#page-product main .row
+  flex-direction: column
+
+.product-images,
+.product-details
+  padding: 0 1rem
+  position: relative
+
+.product-images
+  margin-bottom: 2rem
+
+.product-thumbnails
+  flex: 0 1 0
+  padding-right: 20px
+  img
+    width: 100%
+
+.product-thumbnail
+  border: 0
+  cursor: pointer
+  margin-bottom: 1rem
+  opacity: 0.6
+  padding: 0
+  transition: opacity $duration
+  width: 64px
+  &:hover, &:focus
+    opacity: 1
+  &.selected
+    border: 1px solid $text-light
+    opacity: 1
+    padding: 1px
+
+.product-image
+  flex: 0 1 auto
+  max-width: 100%
+  img
+    width: 100%
+
+.product-description
+  font-size: 1.1rem
+  margin: 0 0 1rem
+
+.product-fine-print
+  color: $text-light
+  font-size: 0.9rem
+
+.product-footer
+  align-items: center
+  display: flex
+  margin: 2rem 0
+
+.product-price
+  flex-grow: 0
+  font-size: 2.8rem
+  font-weight: 500
+  padding-right: 2.5rem
+
+#add-to-cart
+  background: $primary
+  border: 0
+  color: #fff
+  cursor: pointer
+  flex-grow: 1
+  font-family: inherit
+  font-size: 1.3rem
+  font-weight: 700
+  padding: 1rem 1.5rem
+  transition: all $duration
+  &:hover, &:focus
+    background: $primary-darker
+
+#options
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='8' viewBox='0 0 14 8' fill='none' stroke='%23444' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><polyline points='1 1 7 7 13 1'/></svg>")
+  background-position: calc(100% - 0.75rem) 50%
+  background-repeat: no-repeat
+  background-color: $primary-lighter
+  border: 1px solid $primary
+  border-radius: 0
+  color: $text
+  font-family: inherit
+  font-size: 1rem
+  padding: 0 0.75rem
+  height: 48px
+  width: 100%
+
+.product-share
+  border-top: 1px solid $gray-light
+  padding-top: 1rem
+  text-align: center
+  a
+    color: $text-light
+    display: inline-block
+    margin: 0 0.5rem
+    transition: all $duration
+    text-decoration: none
+    &:hover, &:focus
+      color: $text
+
+// Selectableable
+
+.options-are-hidden
+  display: none
+
+.selectableable_fieldset
+  display: flex
+  flex-direction: column
+  flex-wrap: wrap
+  margin: 0 -5px 1rem
+
+.selectableable_legend
+  flex: 0 0 100%
+  padding: 0 5px
+  margin-bottom: 0.5rem
+  &:before
+    content: 'Select a '
+
+.selectableable_choice
+  flex-grow: 1
+  flex-shrink: 0
+  margin-bottom: 10px
+  padding: 0 5px
+  input
+    opacity: 0
+    pointer-events: none
+    position: absolute
+  label
+    align-items: center
+    background: #fff
+    border: 1px solid $gray-light
+    color: $text-light
+    cursor: pointer
+    display: flex
+    min-height: 48px
+    justify-content: center
+    position: relative
+    &:hover
+      border-color: $gray-medium
+  input:checked + label
+    background: $primary-lighter
+    border-color: $primary
+    color: $text
+
+.selectableable_size .selectableable_choice
+  flex-basis: 50%
+  max-width: 50%
+
+.selectableable_color .selectableable_choice
+  flex-basis: 33.33%
+  max-width: 33.33%
+
+
+@media (min-width: $tablet)
+  #page-product main .row
+    flex-direction: row
+
+  .product-images
+    display: flex
+    flex: 0 0 66.666%
+    max-width: 66.666%
+    margin-bottom: 0
+
+  .product-details
+    flex: 0 0 33.333%
+    max-width: 33.333%
+
+  // Selectableable
+
+  .selectableable_fieldset
+    flex-direction: row
