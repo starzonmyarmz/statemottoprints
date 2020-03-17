@@ -1,0 +1,40 @@
+---
+layout: default.njk
+---
+
+<div class="wrapper mt-2 mb-4">
+  <div class="row">
+    <section class="col-8 product-images">
+    </section>
+
+    <section class="col-4 product-details">
+      <h1 class="product-title mb-1">{{ title }}</h1>
+
+      <div class="product-description">
+        “{{ motto }}”
+      </div>
+
+      <div class="product-fine-print">
+        <p>Printed on archival, acid-free, durable matte paper. Please allow 2 - 5 business days to fulfill shipment. Generally shipped in kraft tube boxes with plastic end caps.</p>
+      </div>
+
+      <hr>
+
+      <form method="post" action="/cart" accept-charset="utf8">
+        <input type="hidden" name="utf8" value="✓">
+
+        <div class="product-footer">
+          <div class="product-price">
+            $12
+          </div>
+
+          <button type="submit" name="submit" id="add-to-cart">Add to Cart</button>
+        </div>
+      </form>
+
+      <div class="product-share">
+
+      </div>
+    </section>
+  </div>
+</div>
