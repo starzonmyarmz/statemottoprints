@@ -1,4 +1,0 @@
-{
-	"layout": "product.njk",
-	"permalink": "/products/{{ title | slug }}/"
-}
