@@ -5,6 +5,21 @@ layout: default.njk
 <div class="wrapper mt-2 mb-4">
   <div class="row">
     <section class="col-8 product-images">
+      {% set images = helpers.productImages(state.abbreviation, type) %}
+
+      {% if images.length > 1 %}
+        <div class="product-thumbnails">
+          {% for image in images %}
+            <button type="button" class="product-thumbnail {% if loop.first %}selected{% endif %}" data-source="{{ image }}">
+              <img src="{{ image }}" alt="Image of {{ state.name }}" width="60" height="60">
+            </button>
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      <div class="product-image">
+        <img src="{{ images | first }}" alt="Image of {{ state.name }}">
+      </div>
     </section>
 
     <section class="col-4 product-details">
