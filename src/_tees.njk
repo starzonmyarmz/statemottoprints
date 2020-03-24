@@ -1,0 +1,11 @@
+---
+pagination:
+  data: states
+  size: 1
+  alias: state
+layout: product.njk
+renderData:
+  title: "{{ state.name }} Tee"
+permalink: "/products/tees/{{ state.name | slug }}/"
+type: tee
+---

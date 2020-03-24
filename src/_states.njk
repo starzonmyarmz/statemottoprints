@@ -1,0 +1,12 @@
+---
+pagination:
+  data: states
+  size: 1
+  alias: state
+layout: default.njk
+renderData:
+  title: "{{ state.name }}"
+permalink: "/states/{{ state.name | slug }}/"
+---
+
+products for this state
