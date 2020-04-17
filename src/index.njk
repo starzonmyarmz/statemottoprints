@@ -4,11 +4,29 @@ layout: default.njk
 permalink: /
 ---
 
-<section id="products" class="mt-4 mb-2">
+
+<section id="hero">
+  <img src="https://via.placeholder.com/1280x720" alt="fpo">
+</section>
+
+<section id="shop-by-category">
+  <div>
+    <img src="https://via.placeholder.com/480x320" alt="fpo"><br>
+    Prints
+  </div>
+
+  <div>
+    <img src="https://via.placeholder.com/480x320" alt="fpo"><br>
+    Tees
+  </div>
+</section>
+
+<section id="products" class="mt-2 mb-4">
   <h2>Featured Products</h2>
 
   <div class="wrapper">
     <div class="row">
+      {% include "_new.njk" %}
     </div>
   </div>
 </section>

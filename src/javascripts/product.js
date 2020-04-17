@@ -1,44 +1,43 @@
-document.addEventListener('DOMContentLoaded', () => {
-  if (!document.querySelector('.product-thumbnail')) return
+const cartButton = document.getElementById('add-to-cart')
 
-  document.querySelectorAll('.product-thumbnail').forEach((thumbnail) => {
-    thumbnail.addEventListener('click', (event) => {
-      document.querySelector('.product-thumbnail.selected').classList.remove('selected')
+document.addEventListener('change', ({target}) => {
+  if (!target.closest('[data-price]')) return
+  document.querySelector('.product-price-amount').innerText = target.dataset.price
+  cartButton.dataset.itemPrice = target.dataset.price
+})
 
-      document.querySelector('.product-image img').src = event.currentTarget.dataset.source
-      thumbnail.classList.add('selected')
-    })
+document.addEventListener('change', ({target}) => {
+  if (!target.closest('[data-image]')) return
+  cartButton.dataset.itemImage = target.dataset.image
+})
+
+document.querySelectorAll('.product-thumbnail').forEach((thumbnail) => {
+  thumbnail.addEventListener('click', (event) => {
+    document.querySelector('.product-thumbnail.selected').classList.remove('selected')
+    document.querySelector('.product-image img').src = event.currentTarget.dataset.source
+    thumbnail.classList.add('selected')
   })
 })
 
-document.addEventListener('DOMContentLoaded', () => {
-  if (!document.getElementById('options')) return
+document.addEventListener('change', ({target}) => {
+  if (!target.closest('.product-choice-input')) return
+  const fields = document.querySelectorAll('.product-choices').length
+  const selected = document.querySelectorAll('.product-choice-input[type="radio"]:checked')
 
-  const price_element = document.querySelector('.product-price')
-  const hyphen = /\s*-\s*/g
-  const cents = /\s*.00/g
+  if (fields === selected.length) {
+    let productAttrs = []
+    selected.forEach((option) => productAttrs.push(option.value))
 
-  // Set data-price to price of item
-  document.querySelector('#options option').dataset.price = price_element.innerText
-  document.querySelectorAll('#options option:not(:first-child)').forEach((opt) => {
-    if (opt.innerText.includes('$')) {
-      opt.dataset.price = opt.innerText.split(hyphen)[1].split(cents)[0]
-      opt.innerText = opt.innerText.split(hyphen)[0]
-    } else {
-      opt.dataset.price = document.getElementById('default-price').innerText
-    }
-  })
-
-  // Change price display when selecting different items
-  document.getElementById('options').addEventListener('change', (event) => {
-    price_element.innerHTML = event.currentTarget.selectedOptions[0].dataset.price
-  })
+    cartButton.dataset.itemId = `${cartButton.dataset.itemState}_${cartButton.dataset.itemType}_${productAttrs.join('_')}`
+    cartButton.dataset.itemName = `${document.querySelector('.product-title').innerText} ${productAttrs.join(' ')}`
+    cartButton.disabled = false
+  }
 })
 
 document.addEventListener('input', ({target}) => {
-  const input = target.closest('.selectableable_input')
+  const input = target.closest('.product-choice-input')
   if (!input) return
-  const color = input.value.toLowerCase()
+  const color = input.value
   document.querySelectorAll('button.product-thumbnail').forEach((button) => {
     button.dataset.source.includes(color) ? button.click() : ''
   })

@@ -8,7 +8,11 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy('src/images')
   eleventyConfig.addPassthroughCopy('src/javascripts')
+  // eleventyConfig.addPassthroughCopy('CNAME')
 
+  eleventyConfig.addFilter("getColor", (data) => {
+   return data.split('_')[2].replace(/.jpg/, '')
+ });
 
   return {
     dir: {

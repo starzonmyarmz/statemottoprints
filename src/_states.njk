@@ -9,4 +9,12 @@ renderData:
 permalink: "/states/{{ state.name | slug }}/"
 ---
 
-products for this state
+<section id="products" class="mt-2 mb-4">
+  <h2>All Products for {{ title }}</h2>
+
+  <div class="wrapper">
+    <div class="row">
+      {# {% include "_prints.njk" %} #}
+    </div>
+  </div>
+</section>
