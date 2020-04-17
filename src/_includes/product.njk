@@ -60,7 +60,7 @@
           <fieldset id="product-print-size" class="product-choices">
             <legend class="product-choices-legend">Select a Size</legend>
 
-            {% for size, price in state.prints %}
+            {% for size, price in prints[state.orientation] %}
               <div class="product-choice">
                 <input type="radio" name="product-choice-size" id="product-choice-size-{{ size }}" class="product-choice-input" value="{{ size }}" data-price="{{ price }}">
                 <label class="product-choice-label" for="product-choice-size-{{ size }}">{{ size }}</label>
@@ -85,7 +85,7 @@
           <fieldset id="product-tee-size" class="product-choices">
             <legend class="product-choices-legend">Select a Size</legend>
 
-            {% for size, price in state.tees %}
+            {% for size, price in tees %}
               <div class="product-choice">
                 <input type="radio" name="product-choice-size" id="product-choice-size-{{ size }}" class="product-choice-input" value="{{ size }}" data-price="{{ price }}">
                 <label class="product-choice-label product-choice-label-size" for="product-choice-size-{{ size }}">{{ size }}</label>
