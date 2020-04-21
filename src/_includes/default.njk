@@ -57,7 +57,23 @@
 
             <div class="navigation">
               <nav>
-                <a href="/states">Shop by State</a>
+                <a href="/states">
+                  Shop by State
+                  <svg width="14" height="8" viewBox="0 0 14 8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true">
+                    <polyline points="1 1 7 7 13 1"/>
+                  </svg>
+                </a>
+
+                <div id="state-dropdown">
+                  <div>
+                    <ul>
+                      {% for state in states %}
+                        <li><a href="/states/{{ state.name | slug }}">{{ state.name }}</a></li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                </div>
+
                 <a href="/products/prints">Prints</a>
                 <a href="/products/tees">Tees</a>
                 <a href="/faqs">FAQs</a>

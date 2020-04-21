@@ -23,10 +23,18 @@
   position: fixed
   right: 0
   top: 96px
-  a
+  a, button
+    background: transparent
+    border: 0
     color: inherit
+    cursor: pointer
     display: block
+    font-family: inherit
+    font-size: inherit
+    padding: 0
+    text-align: left
     text-decoration: none
+    width: 100%
   .navigation-visible &
     display: block
 
@@ -38,31 +46,6 @@
   border: 0
   height: 48px
   width: 48px
-
-#search
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='%23444'><path d='M13.1 14.5a8.1 8.1 0 1 1 1.4-1.4l3.2 3.2a1 1 0 0 1-1.4 1.4L13 14.5zm-.6-2.2A6 6 0 0 0 8.1 2a6.1 6.1 0 1 0 4.4 10.3z'/></svg>")
-  background-position: 0 50%
-  background-repeat: no-repeat
-  background-size: 24px
-  border: 0
-  border-bottom: 1px solid transparent
-  box-sizing: content-box
-  cursor: pointer
-  font-family: inherit
-  font-size: 2rem
-  font-weight: 400
-  padding: 5px 0 5px 1.85rem
-  width: 5.1ch
-  &::placeholder
-    color: $text
-  &:focus, &:valid
-    border: 0
-    border-bottom: 1px solid $gray-dark
-    box-sizing: border-box
-    padding-right: 0.5rem
-    width: 100%
-    &::placeholder
-      color: $gray-light
 
 .cart-count
   background: $primary
@@ -106,25 +89,43 @@
     justify-content: space-between
     padding: 0
     position: static
-    a
+    a, button
       display: inline-block
       font-weight: 500
       margin-right: 1.5rem
+      width: auto
 
   .cart-count
     font-size: 0.6rem
     top: -0.5rem
 
-  #search
-    background-position: 0.5rem 50%
-    background-size: unset
-    border: 1px solid transparent
-    font-size: 1.15rem
-    font-weight: 500
-    transition: all $duration
-    &:focus, &:valid
-      border: 1px solid $gray-light
-      width: 250px
+  #state-dropdown
+    box-shadow: 0 5px 10px rgba(#000, 0.03)
+    left: 0
+    opacity: 0
+    padding-top: 2.5rem
+    position: absolute
+    right: 0
+    transition: all 0.4s
+    visibility: hidden
+    width: 100vw
+    div
+      background: #fff
+      columns: 7
+      font-size: 0.95rem
+      padding: 0 4rem 1.5rem
+    ul
+      list-style: none
+      margin: 0
+      padding: 0
+    li
+      margin: 0 0 0.5rem
+
+  #state-dropdown:hover,
+  nav a[href="/states"]:hover + #state-dropdown
+    opacity: 1
+    visibility: visible
+
 
 
 
