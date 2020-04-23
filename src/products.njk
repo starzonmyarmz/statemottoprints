@@ -1,0 +1,15 @@
+---
+permalink: /products.json
+---
+[
+  {% for state in states %}
+    {% for size, price in tees %}
+      {
+        "id": "{{ state.abbreviation }}_tee_{{ size }}",
+        "price": "{{ price }}",
+        "url": ""
+      }{{ '' if loop.last else ',' }}
+    {% endfor %}
+    {{ '' if loop.last else ',' }}
+  {% endfor %}
+]
