@@ -5,7 +5,7 @@
   "scripts": {
     "build:production": "ELEVENTY_ENV=production eleventy",
     "build:staging": "ELEVENTY_ENV=staging eleventy",
-    "serve": "eleventy --serve"
+    "serve": "ELEVENTY_ENV=staging eleventy --serve"
   },
   "repository": {
     "type": "git",
