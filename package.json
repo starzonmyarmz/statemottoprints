@@ -3,7 +3,8 @@
   "version": "2.0.0",
   "description": "",
   "scripts": {
-    "build": "eleventy",
+    "build:production": "ELEVENTY_ENV=production eleventy",
+    "build:staging": "ELEVENTY_ENV=staging eleventy",
     "serve": "eleventy --serve"
   },
   "repository": {

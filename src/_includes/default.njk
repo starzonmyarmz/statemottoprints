@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <title>{{ site.name }} &mdash; {{ renderData.title or title }}</title>
 
+    {% if env.environment == "staging" %}
+      <meta name="robots" content="noindex">
+    {% endif %}
+
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width,initial-scale=1">
