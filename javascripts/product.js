@@ -2,7 +2,7 @@ const cartButton = document.getElementById('add-to-cart')
 
 document.addEventListener('change', ({target}) => {
   if (!target.closest('[data-price]')) return
-  document.querySelector('.product-price-amount').innerText = target.dataset.price
+  document.querySelector('.product-price-amount').innerText = target.dataset.price.replace('.00', '')
   cartButton.dataset.itemPrice = target.dataset.price
 })
 
