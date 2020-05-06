@@ -105,12 +105,19 @@
             </span>
           </div>
 
+
+          {% set full_url = page.url %}
+
           <button id="add-to-cart" class="snipcart-add-item"
             data-item-state="{{ state.abbreviation }}"
             data-item-type="{{ type }}"
             data-item-id=""
             data-item-price=""
-            data-item-url="{{ page.url }}"
+            {% if env.environment == "staging" %}
+              data-item-url="https://staging-pages.statemottoprints.com{{ page.url }}"
+            {% else %}
+              data-item-url="{{ site.url }}{{ page.url }}"
+            {% endif %}
             data-item-description="{{ state.motto }}"
             data-item-image=""
             data-item-name="{{ renderData.title }}"
