@@ -1,10 +1,9 @@
 const cartButton = document.getElementById('add-to-cart')
 
-// document.addEventListener('change', ({target}) => {
-//   if (!target.closest('[data-price]')) return
-//   document.querySelector('.product-price-amount').innerText = target.dataset.price.replace('.00', '')
-//   cartButton.dataset.itemPrice = target.dataset.price
-// })
+document.addEventListener('change', ({target}) => {
+  if (!target.closest('[data-price]')) return
+  document.querySelector('.product-price-amount').innerText = target.dataset.price.replace('.00', '')
+})
 
 document.addEventListener('change', ({target}) => {
   if (!target.closest('[data-image]')) return
@@ -26,6 +25,11 @@ document.addEventListener('change', ({target}) => {
 
 document.addEventListener('change', ({target}) => {
   if (!target.closest('[name="product-choice-color"]')) return
+
+  document.querySelectorAll('button.product-thumbnail').forEach((button) => {
+    button.dataset.source.includes(target.value) ? button.click() : ''
+  })
+
   cartButton.dataset.itemCustom2Value = target.value
 })
 
@@ -34,27 +38,9 @@ document.addEventListener('change', ({target}) => {
   cartButton.dataset.itemCustom3Value = target.value
 })
 
-
 document.addEventListener('change', ({target}) => {
   if (!target.closest('.product-choice-input')) return
   const fields = document.querySelectorAll('.product-choices').length
   const selected = document.querySelectorAll('.product-choice-input[type="radio"]:checked')
-
-  if (fields === selected.length) {
-    let productAttrs = []
-    cartButton.disabled = false
-  }
+  cartButton.disabled = fields !== selected.length
 })
-
-console.log(cartButton.dataset)
-
-
-// Change product image based on selected color
-// document.addEventListener('input', ({target}) => {
-//   const input = target.closest('.product-choice-input')
-//   if (!input) return
-//   const color = input.value
-//   document.querySelectorAll('button.product-thumbnail').forEach((button) => {
-//     button.dataset.source.includes(color) ? button.click() : ''
-//   })
-// })
