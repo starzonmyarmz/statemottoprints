@@ -1,3 +1,6 @@
+{% set site_url = site.production_url if env.environment == "production" else site.staging_url %}
+{% set page_url = site_url + page.url %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -22,14 +25,14 @@
       <meta property="og:site_name" content="{{ site.name }}">
       <meta property="og:type" content="website">
       <meta property="og:title" content="{{ title }}">
-      <meta property="og:image" content="{{ site.url }}/images/logo.png">
-      <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+      <meta property="og:image" content="/images/logo.png">
+      <meta property="og:url" content="{{ page_url }}">
       <meta property="og:description" content="{{ site.description }}">
 
       <meta name="twitter:card" content="summary">
       <meta name="twitter:site" content="@{{ site.twitter }}">
       <meta name="twitter:title" content="{{ renderData.title or title }}">
-      <meta name="twitter:image" content="{{ site.url }}/images/logo.png">
+      <meta name="twitter:image" content="/images/logo.png">
       <meta name="twitter:description" content="{{ site.description }}">
     {% endblock %}
   </head>

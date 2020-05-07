@@ -1,7 +1,8 @@
 {
   "name": "State Motto Prints",
   "description": "Hand-lettered US state mottos on printed goods",
-  "url": "https://www.statemottoprints.com",
+  "production_url": "https://www.statemottoprints.com",
+  "staging_url": "https://staging-pages.statemottoprints.com",
   "twitter": "sm_prints",
   "instagram": "statemottoprints"
 }
