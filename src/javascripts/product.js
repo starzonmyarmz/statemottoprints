@@ -34,20 +34,12 @@ document.addEventListener('change', ({target}) => {
   cartButton.dataset.itemCustom3Value = target.value
 })
 
-
 document.addEventListener('change', ({target}) => {
   if (!target.closest('.product-choice-input')) return
   const fields = document.querySelectorAll('.product-choices').length
   const selected = document.querySelectorAll('.product-choice-input[type="radio"]:checked')
-
-  if (fields === selected.length) {
-    let productAttrs = []
-    cartButton.disabled = false
-  }
+  cartButton.disabled = fields !== selected.length
 })
-
-console.log(cartButton.dataset)
-
 
 // Change product image based on selected color
 // document.addEventListener('input', ({target}) => {
