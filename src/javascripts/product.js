@@ -25,6 +25,11 @@ document.addEventListener('change', ({target}) => {
 
 document.addEventListener('change', ({target}) => {
   if (!target.closest('[name="product-choice-color"]')) return
+
+  document.querySelectorAll('button.product-thumbnail').forEach((button) => {
+    button.dataset.source.includes(target.value) ? button.click() : ''
+  })
+
   cartButton.dataset.itemCustom2Value = target.value
 })
 
@@ -39,13 +44,3 @@ document.addEventListener('change', ({target}) => {
   const selected = document.querySelectorAll('.product-choice-input[type="radio"]:checked')
   cartButton.disabled = fields !== selected.length
 })
-
-// Change product image based on selected color
-// document.addEventListener('input', ({target}) => {
-//   const input = target.closest('.product-choice-input')
-//   if (!input) return
-//   const color = input.value
-//   document.querySelectorAll('button.product-thumbnail').forEach((button) => {
-//     button.dataset.source.includes(color) ? button.click() : ''
-//   })
-// })
