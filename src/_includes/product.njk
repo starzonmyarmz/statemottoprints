@@ -62,11 +62,11 @@
           <fieldset id="product-print-size" class="product-choices">
             <legend class="product-choices-legend">Select Print Dimensions</legend>
 
-            {% for size, price in prints[state.orientation] %}
+            {% for dimension, price in prints[state.orientation] %}
               {% set color = 'white' %}
               <div class="product-choice">
-                <input type="radio" name="product-choice-dimension" id="product-choice-size-{{ size }}" class="product-choice-input" value="{{ size }}" data-price="{{ base_price + price }}" data-image="/images/product/{{ state.abbreviation }}_{{ type }}_{{color}}.jpg">
-                <label class="product-choice-label" for="product-choice-size-{{ size }}">{{ size }}</label>
+                <input type="radio" name="product-choice-dimension" id="product-choice-dimension-{{ dimension }}" class="product-choice-input" value="{{ dimension }}" data-price="{{ base_price + price }}" data-image="/images/product/{{ state.abbreviation }}_{{ type }}_{{color}}.jpg">
+                <label class="product-choice-label" for="product-choice-dimension-{{ dimension }}">{{ dimension }}</label>
               </div>
             {% endfor %}
           </fieldset>
