@@ -2,32 +2,14 @@
   
     
       {
-        "id": "al_tee_s",
-        "price": 29.00,
+        "id": "al_tee_base_price",
+        "price": 29,
         "url": "https://staging-pages.statemottoprints.com/products.json"
       },
     
       {
-        "id": "al_tee_m",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "al_tee_l",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "al_tee_xl",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "al_tee_2xl",
-        "price": 31.00,
+        "id": "al_tee_sizes",
+        "price": [object Object],
         "url": "https://staging-pages.statemottoprints.com/products.json"
       }
     
@@ -35,32 +17,14 @@
   
     
       {
-        "id": "ak_tee_s",
-        "price": 29.00,
+        "id": "ak_tee_base_price",
+        "price": 29,
         "url": "https://staging-pages.statemottoprints.com/products.json"
       },
     
       {
-        "id": "ak_tee_m",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "ak_tee_l",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "ak_tee_xl",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "ak_tee_2xl",
-        "price": 31.00,
+        "id": "ak_tee_sizes",
+        "price": [object Object],
         "url": "https://staging-pages.statemottoprints.com/products.json"
       }
     
@@ -68,32 +32,14 @@
   
     
       {
-        "id": "az_tee_s",
-        "price": 29.00,
+        "id": "az_tee_base_price",
+        "price": 29,
         "url": "https://staging-pages.statemottoprints.com/products.json"
       },
     
       {
-        "id": "az_tee_m",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "az_tee_l",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "az_tee_xl",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "az_tee_2xl",
-        "price": 31.00,
+        "id": "az_tee_sizes",
+        "price": [object Object],
         "url": "https://staging-pages.statemottoprints.com/products.json"
       }
     
@@ -101,32 +47,14 @@
   
     
       {
-        "id": "ar_tee_s",
-        "price": 29.00,
+        "id": "ar_tee_base_price",
+        "price": 29,
         "url": "https://staging-pages.statemottoprints.com/products.json"
       },
     
       {
-        "id": "ar_tee_m",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "ar_tee_l",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "ar_tee_xl",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "ar_tee_2xl",
-        "price": 31.00,
+        "id": "ar_tee_sizes",
+        "price": [object Object],
         "url": "https://staging-pages.statemottoprints.com/products.json"
       }
     
@@ -134,32 +62,14 @@
   
     
       {
-        "id": "ca_tee_s",
-        "price": 29.00,
+        "id": "ca_tee_base_price",
+        "price": 29,
         "url": "https://staging-pages.statemottoprints.com/products.json"
       },
     
       {
-        "id": "ca_tee_m",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "ca_tee_l",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "ca_tee_xl",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "ca_tee_2xl",
-        "price": 31.00,
+        "id": "ca_tee_sizes",
+        "price": [object Object],
         "url": "https://staging-pages.statemottoprints.com/products.json"
       }
     
@@ -167,32 +77,14 @@
   
     
       {
-        "id": "co_tee_s",
-        "price": 29.00,
+        "id": "co_tee_base_price",
+        "price": 29,
         "url": "https://staging-pages.statemottoprints.com/products.json"
       },
     
       {
-        "id": "co_tee_m",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "co_tee_l",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "co_tee_xl",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "co_tee_2xl",
-        "price": 31.00,
+        "id": "co_tee_sizes",
+        "price": [object Object],
         "url": "https://staging-pages.statemottoprints.com/products.json"
       }
     
@@ -200,32 +92,14 @@
   
     
       {
-        "id": "ct_tee_s",
-        "price": 29.00,
+        "id": "ct_tee_base_price",
+        "price": 29,
         "url": "https://staging-pages.statemottoprints.com/products.json"
       },
     
       {
-        "id": "ct_tee_m",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "ct_tee_l",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "ct_tee_xl",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "ct_tee_2xl",
-        "price": 31.00,
+        "id": "ct_tee_sizes",
+        "price": [object Object],
         "url": "https://staging-pages.statemottoprints.com/products.json"
       }
     
@@ -233,32 +107,14 @@
   
     
       {
-        "id": "de_tee_s",
-        "price": 29.00,
+        "id": "de_tee_base_price",
+        "price": 29,
         "url": "https://staging-pages.statemottoprints.com/products.json"
       },
     
       {
-        "id": "de_tee_m",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "de_tee_l",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "de_tee_xl",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "de_tee_2xl",
-        "price": 31.00,
+        "id": "de_tee_sizes",
+        "price": [object Object],
         "url": "https://staging-pages.statemottoprints.com/products.json"
       }
     
@@ -266,32 +122,14 @@
   
     
       {
-        "id": "fl_tee_s",
-        "price": 29.00,
+        "id": "fl_tee_base_price",
+        "price": 29,
         "url": "https://staging-pages.statemottoprints.com/products.json"
       },
     
       {
-        "id": "fl_tee_m",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "fl_tee_l",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "fl_tee_xl",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "fl_tee_2xl",
-        "price": 31.00,
+        "id": "fl_tee_sizes",
+        "price": [object Object],
         "url": "https://staging-pages.statemottoprints.com/products.json"
       }
     
@@ -299,32 +137,14 @@
   
     
       {
-        "id": "ga_tee_s",
-        "price": 29.00,
+        "id": "ga_tee_base_price",
+        "price": 29,
         "url": "https://staging-pages.statemottoprints.com/products.json"
       },
     
       {
-        "id": "ga_tee_m",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "ga_tee_l",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "ga_tee_xl",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "ga_tee_2xl",
-        "price": 31.00,
+        "id": "ga_tee_sizes",
+        "price": [object Object],
         "url": "https://staging-pages.statemottoprints.com/products.json"
       }
     
@@ -332,32 +152,14 @@
   
     
       {
-        "id": "hi_tee_s",
-        "price": 29.00,
+        "id": "hi_tee_base_price",
+        "price": 29,
         "url": "https://staging-pages.statemottoprints.com/products.json"
       },
     
       {
-        "id": "hi_tee_m",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "hi_tee_l",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "hi_tee_xl",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "hi_tee_2xl",
-        "price": 31.00,
+        "id": "hi_tee_sizes",
+        "price": [object Object],
         "url": "https://staging-pages.statemottoprints.com/products.json"
       }
     
@@ -365,32 +167,14 @@
   
     
       {
-        "id": "id_tee_s",
-        "price": 29.00,
+        "id": "id_tee_base_price",
+        "price": 29,
         "url": "https://staging-pages.statemottoprints.com/products.json"
       },
     
       {
-        "id": "id_tee_m",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "id_tee_l",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "id_tee_xl",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "id_tee_2xl",
-        "price": 31.00,
+        "id": "id_tee_sizes",
+        "price": [object Object],
         "url": "https://staging-pages.statemottoprints.com/products.json"
       }
     
@@ -398,32 +182,14 @@
   
     
       {
-        "id": "il_tee_s",
-        "price": 29.00,
+        "id": "il_tee_base_price",
+        "price": 29,
         "url": "https://staging-pages.statemottoprints.com/products.json"
       },
     
       {
-        "id": "il_tee_m",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "il_tee_l",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "il_tee_xl",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "il_tee_2xl",
-        "price": 31.00,
+        "id": "il_tee_sizes",
+        "price": [object Object],
         "url": "https://staging-pages.statemottoprints.com/products.json"
       }
     
@@ -431,32 +197,14 @@
   
     
       {
-        "id": "in_tee_s",
-        "price": 29.00,
+        "id": "in_tee_base_price",
+        "price": 29,
         "url": "https://staging-pages.statemottoprints.com/products.json"
       },
     
       {
-        "id": "in_tee_m",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "in_tee_l",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "in_tee_xl",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "in_tee_2xl",
-        "price": 31.00,
+        "id": "in_tee_sizes",
+        "price": [object Object],
         "url": "https://staging-pages.statemottoprints.com/products.json"
       }
     
@@ -464,32 +212,14 @@
   
     
       {
-        "id": "ia_tee_s",
-        "price": 29.00,
+        "id": "ia_tee_base_price",
+        "price": 29,
         "url": "https://staging-pages.statemottoprints.com/products.json"
       },
     
       {
-        "id": "ia_tee_m",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "ia_tee_l",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "ia_tee_xl",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "ia_tee_2xl",
-        "price": 31.00,
+        "id": "ia_tee_sizes",
+        "price": [object Object],
         "url": "https://staging-pages.statemottoprints.com/products.json"
       }
     
@@ -497,32 +227,14 @@
   
     
       {
-        "id": "ks_tee_s",
-        "price": 29.00,
+        "id": "ks_tee_base_price",
+        "price": 29,
         "url": "https://staging-pages.statemottoprints.com/products.json"
       },
     
       {
-        "id": "ks_tee_m",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "ks_tee_l",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "ks_tee_xl",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "ks_tee_2xl",
-        "price": 31.00,
+        "id": "ks_tee_sizes",
+        "price": [object Object],
         "url": "https://staging-pages.statemottoprints.com/products.json"
       }
     
@@ -530,32 +242,14 @@
   
     
       {
-        "id": "ky_tee_s",
-        "price": 29.00,
+        "id": "ky_tee_base_price",
+        "price": 29,
         "url": "https://staging-pages.statemottoprints.com/products.json"
       },
     
       {
-        "id": "ky_tee_m",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "ky_tee_l",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "ky_tee_xl",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "ky_tee_2xl",
-        "price": 31.00,
+        "id": "ky_tee_sizes",
+        "price": [object Object],
         "url": "https://staging-pages.statemottoprints.com/products.json"
       }
     
@@ -563,32 +257,14 @@
   
     
       {
-        "id": "la_tee_s",
-        "price": 29.00,
+        "id": "la_tee_base_price",
+        "price": 29,
         "url": "https://staging-pages.statemottoprints.com/products.json"
       },
     
       {
-        "id": "la_tee_m",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "la_tee_l",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "la_tee_xl",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "la_tee_2xl",
-        "price": 31.00,
+        "id": "la_tee_sizes",
+        "price": [object Object],
         "url": "https://staging-pages.statemottoprints.com/products.json"
       }
     
@@ -596,32 +272,14 @@
   
     
       {
-        "id": "me_tee_s",
-        "price": 29.00,
+        "id": "me_tee_base_price",
+        "price": 29,
         "url": "https://staging-pages.statemottoprints.com/products.json"
       },
     
       {
-        "id": "me_tee_m",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "me_tee_l",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "me_tee_xl",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "me_tee_2xl",
-        "price": 31.00,
+        "id": "me_tee_sizes",
+        "price": [object Object],
         "url": "https://staging-pages.statemottoprints.com/products.json"
       }
     
@@ -629,32 +287,14 @@
   
     
       {
-        "id": "md_tee_s",
-        "price": 29.00,
+        "id": "md_tee_base_price",
+        "price": 29,
         "url": "https://staging-pages.statemottoprints.com/products.json"
       },
     
       {
-        "id": "md_tee_m",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "md_tee_l",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "md_tee_xl",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "md_tee_2xl",
-        "price": 31.00,
+        "id": "md_tee_sizes",
+        "price": [object Object],
         "url": "https://staging-pages.statemottoprints.com/products.json"
       }
     
@@ -662,32 +302,14 @@
   
     
       {
-        "id": "ma_tee_s",
-        "price": 29.00,
+        "id": "ma_tee_base_price",
+        "price": 29,
         "url": "https://staging-pages.statemottoprints.com/products.json"
       },
     
       {
-        "id": "ma_tee_m",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "ma_tee_l",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "ma_tee_xl",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "ma_tee_2xl",
-        "price": 31.00,
+        "id": "ma_tee_sizes",
+        "price": [object Object],
         "url": "https://staging-pages.statemottoprints.com/products.json"
       }
     
@@ -695,32 +317,14 @@
   
     
       {
-        "id": "mi_tee_s",
-        "price": 29.00,
+        "id": "mi_tee_base_price",
+        "price": 29,
         "url": "https://staging-pages.statemottoprints.com/products.json"
       },
     
       {
-        "id": "mi_tee_m",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "mi_tee_l",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "mi_tee_xl",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "mi_tee_2xl",
-        "price": 31.00,
+        "id": "mi_tee_sizes",
+        "price": [object Object],
         "url": "https://staging-pages.statemottoprints.com/products.json"
       }
     
@@ -728,32 +332,14 @@
   
     
       {
-        "id": "mn_tee_s",
-        "price": 29.00,
+        "id": "mn_tee_base_price",
+        "price": 29,
         "url": "https://staging-pages.statemottoprints.com/products.json"
       },
     
       {
-        "id": "mn_tee_m",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "mn_tee_l",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "mn_tee_xl",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "mn_tee_2xl",
-        "price": 31.00,
+        "id": "mn_tee_sizes",
+        "price": [object Object],
         "url": "https://staging-pages.statemottoprints.com/products.json"
       }
     
@@ -761,32 +347,14 @@
   
     
       {
-        "id": "ms_tee_s",
-        "price": 29.00,
+        "id": "ms_tee_base_price",
+        "price": 29,
         "url": "https://staging-pages.statemottoprints.com/products.json"
       },
     
       {
-        "id": "ms_tee_m",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "ms_tee_l",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "ms_tee_xl",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "ms_tee_2xl",
-        "price": 31.00,
+        "id": "ms_tee_sizes",
+        "price": [object Object],
         "url": "https://staging-pages.statemottoprints.com/products.json"
       }
     
@@ -794,32 +362,14 @@
   
     
       {
-        "id": "mo_tee_s",
-        "price": 29.00,
+        "id": "mo_tee_base_price",
+        "price": 29,
         "url": "https://staging-pages.statemottoprints.com/products.json"
       },
     
       {
-        "id": "mo_tee_m",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "mo_tee_l",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "mo_tee_xl",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "mo_tee_2xl",
-        "price": 31.00,
+        "id": "mo_tee_sizes",
+        "price": [object Object],
         "url": "https://staging-pages.statemottoprints.com/products.json"
       }
     
@@ -827,32 +377,14 @@
   
     
       {
-        "id": "mt_tee_s",
-        "price": 29.00,
+        "id": "mt_tee_base_price",
+        "price": 29,
         "url": "https://staging-pages.statemottoprints.com/products.json"
       },
     
       {
-        "id": "mt_tee_m",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "mt_tee_l",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "mt_tee_xl",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "mt_tee_2xl",
-        "price": 31.00,
+        "id": "mt_tee_sizes",
+        "price": [object Object],
         "url": "https://staging-pages.statemottoprints.com/products.json"
       }
     
@@ -860,32 +392,14 @@
   
     
       {
-        "id": "ne_tee_s",
-        "price": 29.00,
+        "id": "ne_tee_base_price",
+        "price": 29,
         "url": "https://staging-pages.statemottoprints.com/products.json"
       },
     
       {
-        "id": "ne_tee_m",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "ne_tee_l",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "ne_tee_xl",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "ne_tee_2xl",
-        "price": 31.00,
+        "id": "ne_tee_sizes",
+        "price": [object Object],
         "url": "https://staging-pages.statemottoprints.com/products.json"
       }
     
@@ -893,32 +407,14 @@
   
     
       {
-        "id": "nv_tee_s",
-        "price": 29.00,
+        "id": "nv_tee_base_price",
+        "price": 29,
         "url": "https://staging-pages.statemottoprints.com/products.json"
       },
     
       {
-        "id": "nv_tee_m",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "nv_tee_l",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "nv_tee_xl",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "nv_tee_2xl",
-        "price": 31.00,
+        "id": "nv_tee_sizes",
+        "price": [object Object],
         "url": "https://staging-pages.statemottoprints.com/products.json"
       }
     
@@ -926,32 +422,14 @@
   
     
       {
-        "id": "nh_tee_s",
-        "price": 29.00,
+        "id": "nh_tee_base_price",
+        "price": 29,
         "url": "https://staging-pages.statemottoprints.com/products.json"
       },
     
       {
-        "id": "nh_tee_m",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "nh_tee_l",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "nh_tee_xl",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "nh_tee_2xl",
-        "price": 31.00,
+        "id": "nh_tee_sizes",
+        "price": [object Object],
         "url": "https://staging-pages.statemottoprints.com/products.json"
       }
     
@@ -959,32 +437,14 @@
   
     
       {
-        "id": "nj_tee_s",
-        "price": 29.00,
+        "id": "nj_tee_base_price",
+        "price": 29,
         "url": "https://staging-pages.statemottoprints.com/products.json"
       },
     
       {
-        "id": "nj_tee_m",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "nj_tee_l",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "nj_tee_xl",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "nj_tee_2xl",
-        "price": 31.00,
+        "id": "nj_tee_sizes",
+        "price": [object Object],
         "url": "https://staging-pages.statemottoprints.com/products.json"
       }
     
@@ -992,32 +452,14 @@
   
     
       {
-        "id": "nm_tee_s",
-        "price": 29.00,
+        "id": "nm_tee_base_price",
+        "price": 29,
         "url": "https://staging-pages.statemottoprints.com/products.json"
       },
     
       {
-        "id": "nm_tee_m",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "nm_tee_l",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "nm_tee_xl",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "nm_tee_2xl",
-        "price": 31.00,
+        "id": "nm_tee_sizes",
+        "price": [object Object],
         "url": "https://staging-pages.statemottoprints.com/products.json"
       }
     
@@ -1025,32 +467,14 @@
   
     
       {
-        "id": "ny_tee_s",
-        "price": 29.00,
+        "id": "ny_tee_base_price",
+        "price": 29,
         "url": "https://staging-pages.statemottoprints.com/products.json"
       },
     
       {
-        "id": "ny_tee_m",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "ny_tee_l",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "ny_tee_xl",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "ny_tee_2xl",
-        "price": 31.00,
+        "id": "ny_tee_sizes",
+        "price": [object Object],
         "url": "https://staging-pages.statemottoprints.com/products.json"
       }
     
@@ -1058,32 +482,14 @@
   
     
       {
-        "id": "nc_tee_s",
-        "price": 29.00,
+        "id": "nc_tee_base_price",
+        "price": 29,
         "url": "https://staging-pages.statemottoprints.com/products.json"
       },
     
       {
-        "id": "nc_tee_m",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "nc_tee_l",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "nc_tee_xl",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "nc_tee_2xl",
-        "price": 31.00,
+        "id": "nc_tee_sizes",
+        "price": [object Object],
         "url": "https://staging-pages.statemottoprints.com/products.json"
       }
     
@@ -1091,32 +497,14 @@
   
     
       {
-        "id": "nd_tee_s",
-        "price": 29.00,
+        "id": "nd_tee_base_price",
+        "price": 29,
         "url": "https://staging-pages.statemottoprints.com/products.json"
       },
     
       {
-        "id": "nd_tee_m",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "nd_tee_l",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "nd_tee_xl",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "nd_tee_2xl",
-        "price": 31.00,
+        "id": "nd_tee_sizes",
+        "price": [object Object],
         "url": "https://staging-pages.statemottoprints.com/products.json"
       }
     
@@ -1124,32 +512,14 @@
   
     
       {
-        "id": "oh_tee_s",
-        "price": 29.00,
+        "id": "oh_tee_base_price",
+        "price": 29,
         "url": "https://staging-pages.statemottoprints.com/products.json"
       },
     
       {
-        "id": "oh_tee_m",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "oh_tee_l",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "oh_tee_xl",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "oh_tee_2xl",
-        "price": 31.00,
+        "id": "oh_tee_sizes",
+        "price": [object Object],
         "url": "https://staging-pages.statemottoprints.com/products.json"
       }
     
@@ -1157,32 +527,14 @@
   
     
       {
-        "id": "ok_tee_s",
-        "price": 29.00,
+        "id": "ok_tee_base_price",
+        "price": 29,
         "url": "https://staging-pages.statemottoprints.com/products.json"
       },
     
       {
-        "id": "ok_tee_m",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "ok_tee_l",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "ok_tee_xl",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "ok_tee_2xl",
-        "price": 31.00,
+        "id": "ok_tee_sizes",
+        "price": [object Object],
         "url": "https://staging-pages.statemottoprints.com/products.json"
       }
     
@@ -1190,32 +542,14 @@
   
     
       {
-        "id": "or_tee_s",
-        "price": 29.00,
+        "id": "or_tee_base_price",
+        "price": 29,
         "url": "https://staging-pages.statemottoprints.com/products.json"
       },
     
       {
-        "id": "or_tee_m",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "or_tee_l",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "or_tee_xl",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "or_tee_2xl",
-        "price": 31.00,
+        "id": "or_tee_sizes",
+        "price": [object Object],
         "url": "https://staging-pages.statemottoprints.com/products.json"
       }
     
@@ -1223,32 +557,14 @@
   
     
       {
-        "id": "pa_tee_s",
-        "price": 29.00,
+        "id": "pa_tee_base_price",
+        "price": 29,
         "url": "https://staging-pages.statemottoprints.com/products.json"
       },
     
       {
-        "id": "pa_tee_m",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "pa_tee_l",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "pa_tee_xl",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "pa_tee_2xl",
-        "price": 31.00,
+        "id": "pa_tee_sizes",
+        "price": [object Object],
         "url": "https://staging-pages.statemottoprints.com/products.json"
       }
     
@@ -1256,32 +572,14 @@
   
     
       {
-        "id": "ri_tee_s",
-        "price": 29.00,
+        "id": "ri_tee_base_price",
+        "price": 29,
         "url": "https://staging-pages.statemottoprints.com/products.json"
       },
     
       {
-        "id": "ri_tee_m",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "ri_tee_l",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "ri_tee_xl",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "ri_tee_2xl",
-        "price": 31.00,
+        "id": "ri_tee_sizes",
+        "price": [object Object],
         "url": "https://staging-pages.statemottoprints.com/products.json"
       }
     
@@ -1289,32 +587,14 @@
   
     
       {
-        "id": "sc_tee_s",
-        "price": 29.00,
+        "id": "sc_tee_base_price",
+        "price": 29,
         "url": "https://staging-pages.statemottoprints.com/products.json"
       },
     
       {
-        "id": "sc_tee_m",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "sc_tee_l",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "sc_tee_xl",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "sc_tee_2xl",
-        "price": 31.00,
+        "id": "sc_tee_sizes",
+        "price": [object Object],
         "url": "https://staging-pages.statemottoprints.com/products.json"
       }
     
@@ -1322,32 +602,14 @@
   
     
       {
-        "id": "sd_tee_s",
-        "price": 29.00,
+        "id": "sd_tee_base_price",
+        "price": 29,
         "url": "https://staging-pages.statemottoprints.com/products.json"
       },
     
       {
-        "id": "sd_tee_m",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "sd_tee_l",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "sd_tee_xl",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "sd_tee_2xl",
-        "price": 31.00,
+        "id": "sd_tee_sizes",
+        "price": [object Object],
         "url": "https://staging-pages.statemottoprints.com/products.json"
       }
     
@@ -1355,32 +617,14 @@
   
     
       {
-        "id": "tn_tee_s",
-        "price": 29.00,
+        "id": "tn_tee_base_price",
+        "price": 29,
         "url": "https://staging-pages.statemottoprints.com/products.json"
       },
     
       {
-        "id": "tn_tee_m",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "tn_tee_l",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "tn_tee_xl",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "tn_tee_2xl",
-        "price": 31.00,
+        "id": "tn_tee_sizes",
+        "price": [object Object],
         "url": "https://staging-pages.statemottoprints.com/products.json"
       }
     
@@ -1388,32 +632,14 @@
   
     
       {
-        "id": "tx_tee_s",
-        "price": 29.00,
+        "id": "tx_tee_base_price",
+        "price": 29,
         "url": "https://staging-pages.statemottoprints.com/products.json"
       },
     
       {
-        "id": "tx_tee_m",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "tx_tee_l",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "tx_tee_xl",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "tx_tee_2xl",
-        "price": 31.00,
+        "id": "tx_tee_sizes",
+        "price": [object Object],
         "url": "https://staging-pages.statemottoprints.com/products.json"
       }
     
@@ -1421,32 +647,14 @@
   
     
       {
-        "id": "ut_tee_s",
-        "price": 29.00,
+        "id": "ut_tee_base_price",
+        "price": 29,
         "url": "https://staging-pages.statemottoprints.com/products.json"
       },
     
       {
-        "id": "ut_tee_m",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "ut_tee_l",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "ut_tee_xl",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "ut_tee_2xl",
-        "price": 31.00,
+        "id": "ut_tee_sizes",
+        "price": [object Object],
         "url": "https://staging-pages.statemottoprints.com/products.json"
       }
     
@@ -1454,32 +662,14 @@
   
     
       {
-        "id": "vt_tee_s",
-        "price": 29.00,
+        "id": "vt_tee_base_price",
+        "price": 29,
         "url": "https://staging-pages.statemottoprints.com/products.json"
       },
     
       {
-        "id": "vt_tee_m",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "vt_tee_l",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "vt_tee_xl",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "vt_tee_2xl",
-        "price": 31.00,
+        "id": "vt_tee_sizes",
+        "price": [object Object],
         "url": "https://staging-pages.statemottoprints.com/products.json"
       }
     
@@ -1487,32 +677,14 @@
   
     
       {
-        "id": "va_tee_s",
-        "price": 29.00,
+        "id": "va_tee_base_price",
+        "price": 29,
         "url": "https://staging-pages.statemottoprints.com/products.json"
       },
     
       {
-        "id": "va_tee_m",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "va_tee_l",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "va_tee_xl",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "va_tee_2xl",
-        "price": 31.00,
+        "id": "va_tee_sizes",
+        "price": [object Object],
         "url": "https://staging-pages.statemottoprints.com/products.json"
       }
     
@@ -1520,32 +692,14 @@
   
     
       {
-        "id": "wa_tee_s",
-        "price": 29.00,
+        "id": "wa_tee_base_price",
+        "price": 29,
         "url": "https://staging-pages.statemottoprints.com/products.json"
       },
     
       {
-        "id": "wa_tee_m",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "wa_tee_l",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "wa_tee_xl",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "wa_tee_2xl",
-        "price": 31.00,
+        "id": "wa_tee_sizes",
+        "price": [object Object],
         "url": "https://staging-pages.statemottoprints.com/products.json"
       }
     
@@ -1553,32 +707,14 @@
   
     
       {
-        "id": "wv_tee_s",
-        "price": 29.00,
+        "id": "wv_tee_base_price",
+        "price": 29,
         "url": "https://staging-pages.statemottoprints.com/products.json"
       },
     
       {
-        "id": "wv_tee_m",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "wv_tee_l",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "wv_tee_xl",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "wv_tee_2xl",
-        "price": 31.00,
+        "id": "wv_tee_sizes",
+        "price": [object Object],
         "url": "https://staging-pages.statemottoprints.com/products.json"
       }
     
@@ -1586,32 +722,14 @@
   
     
       {
-        "id": "wy_tee_s",
-        "price": 29.00,
+        "id": "wy_tee_base_price",
+        "price": 29,
         "url": "https://staging-pages.statemottoprints.com/products.json"
       },
     
       {
-        "id": "wy_tee_m",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "wy_tee_l",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "wy_tee_xl",
-        "price": 29.00,
-        "url": "https://staging-pages.statemottoprints.com/products.json"
-      },
-    
-      {
-        "id": "wy_tee_2xl",
-        "price": 31.00,
+        "id": "wy_tee_sizes",
+        "price": [object Object],
         "url": "https://staging-pages.statemottoprints.com/products.json"
       }
     
