@@ -57,13 +57,15 @@
         <hr>
 
         {% if type == 'print' %}
+          {% set base_price = prints.base_price %}
+
           <fieldset id="product-print-size" class="product-choices">
-            <legend class="product-choices-legend">Select a Size</legend>
+            <legend class="product-choices-legend">Select Print Dimensions</legend>
 
             {% for size, price in prints[state.orientation] %}
               {% set color = 'white' %}
               <div class="product-choice">
-                <input type="radio" name="product-choice-size" id="product-choice-size-{{ size }}" class="product-choice-input" value="{{ size }}" data-price="{{ price }}" data-image="/images/product/{{ state.abbreviation }}_{{ type }}_{{color}}.jpg">
+                <input type="radio" name="product-choice-dimension" id="product-choice-size-{{ size }}" class="product-choice-input" value="{{ size }}" data-price="{{ price }}" data-image="/images/product/{{ state.abbreviation }}_{{ type }}_{{color}}.jpg">
                 <label class="product-choice-label" for="product-choice-size-{{ size }}">{{ size }}</label>
               </div>
             {% endfor %}
@@ -71,8 +73,10 @@
         {% endif %}
 
         {% if type == 'tee' %}
+          {% set base_price = tees.base_price %}
+
           <fieldset id="product-tee-color" class="product-choices">
-            <legend class="product-choices-legend">Select a Color</legend>
+            <legend class="product-choices-legend">Select Tee Color</legend>
 
             {% for image in images %}
               {% set color = image | getColor %}
@@ -84,9 +88,9 @@
           </fieldset>
 
           <fieldset id="product-tee-size" class="product-choices">
-            <legend class="product-choices-legend">Select a Size</legend>
+            <legend class="product-choices-legend">Select Tee Size</legend>
 
-            {% for size, price in tees %}
+            {% for size, price in tees.sizes %}
               <div class="product-choice">
                 <input type="radio" name="product-choice-size" id="product-choice-size-{{ size }}" class="product-choice-input" value="{{ size }}" data-price="{{ price }}">
                 <label class="product-choice-label product-choice-label-size" for="product-choice-size-{{ size }}">{{ size }}</label>
@@ -99,21 +103,33 @@
         <div class="product-footer">
           <div class="product-price">
             <span class="product-price-currency">$</span>
-            <span class="product-price-amount">
-              {% if type == 'print' %}12{% endif %}
-              {% if type == 'tee' %}29{% endif %}
-            </span>
+            <span class="product-price-amount">{{ base_price }}</span>
           </div>
 
           <button id="add-to-cart" class="snipcart-add-item"
-            data-item-state="{{ state.abbreviation }}"
-            data-item-type="{{ type }}"
-            data-item-id=""
-            data-item-price=""
+            data-item-id="{{ state.abbreviation }}_{{ type }}"
+            data-item-price="{{ base_price }}"
             data-item-url="{{ page_url }}"
             data-item-description="{{ state.motto }}"
             data-item-image=""
             data-item-name="{{ renderData.title }}"
+
+            {% if type == "print" %}
+              data-item-custom1-name="Dimensions"
+              data-item-custom1-options="{% for size, price in prints[state.orientation] %}{{ size }}{{ '' if loop.last else '|' }}{{ price }}]|{% endfor %}"
+              data-item-custom1-value=""
+            {% endif %}
+
+            {% if type == "tee" %}
+              data-item-custom2-name="Color"
+              data-item-custom2-options="{% for image in images %}{{ image | getColor }}{{ '' if loop.last else '|' }}{% endfor %}"
+              data-item-custom2-value=""
+
+              data-item-custom3-name="Size"
+              data-item-custom3-options="{% for size, price in tees.sizes %}{{ size }}[{{ price }}]{{ '' if loop.last else '|' }}{% endfor %}"
+              data-item-custom3-value=""
+            {% endif %}
+
             disabled>
             Add to cart
           </button>
