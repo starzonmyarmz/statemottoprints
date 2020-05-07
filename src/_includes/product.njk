@@ -116,7 +116,7 @@
 
             {% if type == "print" %}
               data-item-custom1-name="Dimensions"
-              data-item-custom1-options="{% for size, price in prints[state.orientation] %}{{ size }}{{ '' if loop.last else '|' }}{{ price }}]|{% endfor %}"
+              data-item-custom1-options="{% for size, price in prints[state.orientation] %}{{ size }}{{ '' if loop.last else '|' }}[{{ price }}]|{% endfor %}"
               data-item-custom1-value=""
             {% endif %}
 
