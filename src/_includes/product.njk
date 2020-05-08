@@ -81,7 +81,7 @@
             {% for image in images %}
               {% set color = image | getColor %}
               <div class="product-choice">
-                <input type="radio" name="product-choice-color" id="product-choice-color-{{ color }}" class="product-choice-input" value="{{ color }}" data-image="/images/product/{{ state.abbreviation }}_{{ type }}_{{color}}.jpg">
+                <input type="radio" name="product-choice-color" id="product-choice-color-{{ color }}" class="product-choice-input" value="{{ color | capitalize }}" data-image="/images/product/{{ state.abbreviation }}_{{ type }}_{{color}}.jpg">
                 <label class="product-choice-label" for="product-choice-color-{{ color }}">{{ color | capitalize }}</label>
               </div>
             {% endfor %}
@@ -92,8 +92,8 @@
 
             {% for size, price in tees.sizes %}
               <div class="product-choice">
-                <input type="radio" name="product-choice-size" id="product-choice-size-{{ size }}" class="product-choice-input" value="{{ size }}" data-price="{{ base_price + price }}">
-                <label class="product-choice-label product-choice-label-size" for="product-choice-size-{{ size }}">{{ size }}</label>
+                <input type="radio" name="product-choice-size" id="product-choice-size-{{ size }}" class="product-choice-input" value="{{ size | upper }}" data-price="{{ base_price + price }}">
+                <label class="product-choice-label" for="product-choice-size-{{ size }}">{{ size | upper }}</label>
               </div>
             {% endfor %}
           </fieldset>
@@ -122,11 +122,11 @@
 
             {% if type == "tee" %}
               data-item-custom2-name="Color"
-              data-item-custom2-options="{% for image in images %}{{ image | getColor }}{{ '' if loop.last else '|' }}{% endfor %}"
+              data-item-custom2-options="{% for image in images %}{{ image | getColor | capitalize }}{{ '' if loop.last else '|' }}{% endfor %}"
               data-item-custom2-value=""
 
               data-item-custom3-name="Size"
-              data-item-custom3-options="{% for size, price in tees.sizes %}{{ size }}[+{{ price }}]{{ '' if loop.last else '|' }}{% endfor %}"
+              data-item-custom3-options="{% for size, price in tees.sizes %}{{ size | upper }}[+{{ price }}]{{ '' if loop.last else '|' }}{% endfor %}"
               data-item-custom3-value=""
             {% endif %}
 
