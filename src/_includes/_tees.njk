@@ -1,9 +1,0 @@
-{% for state in states %}
-  <div class="product">
-    <a href="/products/tees/{{ state.name | slug }}">
-      <img src="/images/product/{{ state.abbreviation }}_tee_grey.jpg" alt="Product shot of {{ state.name }}" loading="lazy">
-      <h5>{{ state.name }}</h5>
-      <div class="price">$29</div>
-    </a>
-  </div>
-{% endfor %}
