@@ -25,7 +25,7 @@
         {% if images.length > 1 %}
           <div class="product-thumbnails">
             {% for image in images %}
-              <button type="button" class="product-thumbnail {% 'selected' if loop.first %}" data-source="{{ image }}">
+              <button type="button" class="product-thumbnail {% if loop.first %}selected{% endif %}" data-source="{{ image }}">
                 <img src="{{ image }}" alt="Image of {{ state.name }}" width="60" height="60">
               </button>
             {% endfor %}
