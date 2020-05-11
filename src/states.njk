@@ -10,9 +10,12 @@ permalink: /states/
   <div class="wrapper">
     <div class="row">
       {% for state in states %}
+      {% set images = helpers.productImages(state.abbreviation, 'print') %}
+      {% set cover = images | first %}
+
         <div class="product">
           <a href="/states/{{ state.name | slug }}">
-            <img src="/images/product/{{ state.abbreviation }}_print_white.jpg" alt="Product shot of {{ state.name }}" loading="lazy">
+            <img src="{{ cover }}" alt="Product shot of {{ state.name }}" loading="lazy">
             <h5>{{ state.name }}</h5>
           </a>
         </div>
