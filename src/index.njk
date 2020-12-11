@@ -4,25 +4,11 @@ layout: default.njk
 permalink: /
 ---
 
-<section id="hero">
-  {# 1280 x 720 #}
-  <img src="./images/hero_living_room.jpg" alt="North Carolina State Motto Print on living room wall">
-</section>
-
-<section id="shop-by-category">
-  <div>
-    <a href="/products/prints">
-      {# 480 x 320 #}
-      <img src="./images/prints.jpg" alt="Rugged Utah State Motto Print leaning against concrete wall"><br>
-      <h2>Shop Prints</h2>
-    </a>
-  </div>
-
-  <div>
-    <a href="/products/tees">
-    {# 480 x 320 #}
-    <img src="./images/tees.jpg" alt="Man wearing New York State Motto navy blue tee shirt"><br>
-    <h2>Shop Tees</h2>
-    </a>
-  </div>
+<section>
+  {% for state in states %}
+    <button type="button" data-enlarge>
+      <img src="/images/product/{{ state.abbreviation }}_print_white.jpg" alt="{{ state.name }} &mdash; {{ state.motto }}" loading="lazy">
+      <span>{{ state.name }} &mdash; {{ state.motto }}</span>
+    </button>
+  {% endfor %}
 </section>

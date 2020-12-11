@@ -1,9 +1,82 @@
-@import "vars"
-@import "base"
-@import "cart"
-@import "home"
-@import "layout"
-@import "product"
-@import "products"
-@import "snipcart"
-@import "utilities"
+// Variables
+
+$primary: #46cdcf
+$primary-lighter: #d5f0f0
+$primary-darker: #13a4a8
+
+$gray-dark: #444
+$gray-medium: #888
+$gray-light: #ccc
+$gray-lighter: #eee
+
+$text: $gray-dark
+$text-light: $gray-medium
+
+$duration: 0.2s
+
+$phone: 600px
+$tablet: 800px
+$desktop: 1024px
+
+*, *:before, *:after
+  box-sizing: border-box
+
+html
+  background: #fff
+  color: $text
+  font-family: 'Montserrat', 'helvetica neue', helvetica, arial, sans-serif
+  font-size: 100%
+  font-weight: 400
+  line-height: 1.4
+  text-rendering: optimizeLegibility
+
+body
+  font-size: 1rem
+  margin: 0
+
+a
+  color: $primary
+
+button
+  background: transparent
+  border: 0
+  cursor: pointer
+  span
+    display: none
+
+header
+  padding: 24px 0
+  text-align: center
+
+img
+  vertical-align: middle
+
+section
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  img
+    height: auto
+    width: 100%
+
+.byline
+  display: block
+  font-size: 0.9rem
+  margin-top: 8px
+
+.big
+  background: rgba(#000, 0.8)
+  bottom: 0
+  left: 0
+  padding: 48px
+  position: fixed
+  right: 0
+  top: 0
+  span
+    color: #fff
+    display: block
+    font-size: 1.2rem
+    margin: 24px
+
+@media (min-width: $tablet)
+  section
+    grid-template-columns: repeat(5, 1fr)
