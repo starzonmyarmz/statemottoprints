@@ -1,14 +1,19 @@
 ---
-title: Home
 layout: default.njk
-permalink: /
 ---
 
 <section>
   {% for state in states %}
-    <button type="button" data-enlarge>
-      <img src="/images/product/{{ state.abbreviation }}_print_white.jpg" alt="{{ state.name }} &mdash; {{ state.motto }}" loading="lazy">
-      <span>{{ state.name }} &mdash; {{ state.motto }}</span>
+    <button command="show-modal" commandfor="dialog-{{ state.abbreviation }}" aria-label="Zoom in on {{ state.name }}">
+      <img src="images/smp/{{ state.abbreviation }}-sm.webp" srcset="images/smp/{{ state.abbreviation }}-sm.webp 256w, images/smp/{{ state.abbreviation }}-lg.webp 800w" sizes="256px" alt="{{ state.name }} — {{ state.motto }}" width="256" height="256" loading="lazy">
     </button>
+    <dialog id="dialog-{{ state.abbreviation }}">
+      <figure>
+        <button command="close" commandfor="dialog-{{ state.abbreviation }}" aria-label="Close">
+          <img src="images/smp/{{ state.abbreviation }}-lg.webp" alt="{{ state.name }} — {{ state.motto }}" width="800" height="800" loading="lazy">
+        </button>
+        <figcaption>{{ state.name }} — {{ state.motto }}</figcaption>
+      </figure>
+    </dialog>
   {% endfor %}
 </section>

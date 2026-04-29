@@ -1,11 +1,10 @@
 {
   "name": "statemottoprints",
   "version": "2.0.0",
-  "description": "",
+  "description": "Hand-lettered US state mottos by Daniel Marino",
   "scripts": {
-    "build:production": "ELEVENTY_ENV=production eleventy",
-    "build:staging": "ELEVENTY_ENV=staging eleventy",
-    "serve": "ELEVENTY_ENV=staging eleventy --serve"
+    "build": "eleventy",
+    "serve": "eleventy --serve"
   },
   "repository": {
     "type": "git",
@@ -13,8 +12,6 @@
   },
   "author": "Daniel Marino",
   "devDependencies": {
-    "@11ty/eleventy": "^0.10.0",
-    "eleventy-plugin-sass": "^1.0.0",
-    "glob": "^7.1.6"
+    "@11ty/eleventy": "^3.1.5"
   }
 }

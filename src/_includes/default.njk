@@ -1,53 +1,18 @@
-{% set site_url = site.production_url if env.environment == "production" else site.staging_url %}
-{% set page_url = site_url + page.url %}
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>{{ site.name }} &mdash; {{ renderData.title or title }}</title>
-
-    {% if env.environment == "staging" %}
-      <meta name="robots" content="noindex">
-    {% endif %}
-
-    <meta name="description" content="Hand-lettered US state mottos on posters, prints, and tee shirts.">
+    <title>{{ site.name }}</title>
+    <meta name="description" content="Hand-lettered US state mottos by Daniel Marino">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-
-    <link rel="icon" href="/images/favicon.ico">
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,700">
-    <link rel="stylesheet" href="/stylesheets/styles.css">
-
-    {% block social_meta %}
-      <meta property="og:site_name" content="{{ site.name }}">
-      <meta property="og:type" content="website">
-      <meta property="og:title" content="{{ title }}">
-      <meta property="og:image" content="/images/logo.png">
-      <meta property="og:url" content="{{ page_url }}">
-      <meta property="og:description" content="{{ site.description }}">
-
-      <meta name="twitter:card" content="summary">
-      <meta name="twitter:site" content="@{{ site.twitter }}">
-      <meta name="twitter:title" content="{{ renderData.title or title }}">
-      <meta name="twitter:image" content="/images/logo.png">
-      <meta name="twitter:description" content="{{ site.description }}">
-    {% endblock %}
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="stylesheets/styles.css">
   </head>
   <body>
-    <header id="site-header">
-      <a href="/" title="{{ site.name }}">
-        <img src="/images/logo.png" alt="{{ site.name }} logo" width="90" height="60">
-      </a>
-      <em class="byline">Hand-lettered US state mottos by <a href="https://iamdanielmarino.com">Daniel Marino</a></em>
-    </header>
+    <h1>
+      <a href="https://iamdanielmarino.com">Daniel Marino</a> is hand-lettering US state mottos
+    </h1>
 
-    <main class="content">
-      {% block main %}
-        {{ content | safe }}
-      {% endblock %}
-    </main>
-
-    <script src="/javascripts/scripts.js" type="module"></script>
+    <main>{{ content | safe }}</main>
   </body>
 </html>
