@@ -22,7 +22,7 @@ const DEFAULT_FILL = 0.78;
 const LANDSCAPE = [
   { name: "copper-landscape", file: "copper-landscape.jpg", x: 480, y: 380, w: 1036, h: 772, fill: 0.9 },
   { name: "rustic-shelf", file: "original-co.jpg", from: "co", x: 539, y: 690, w: 1466, h: 1116, paper: ["#ffffff", "#ffffff", "#ffffff", "#ffffff"] },
-  { name: "brick-floor", file: "original-la.jpg", from: "la", x: 282, y: 467, w: 1109, h: 750, paper: ["#ebe7e4", "#eae6e3", "#dcd7d3", "#d9d4d0"] },
+  { name: "brick-floor", file: "original-la.jpg", from: "la", x: 274, y: 461, w: 1121, h: 835, paper: ["#ebe7e4", "#eae6e3", "#d6d1cd", "#ccc7c3"] },
   { name: "whitewash-frame", file: "original-mt.jpg", from: "mt", x: 449, y: 619, w: 1543, h: 1230, paper: ["#ffffff", "#ffffff", "#ffffff", "#ffffff"] },
   { name: "oak-desk", file: "original-or.jpg", from: "or", x: 251, y: 362, w: 630, h: 463, paper: ["#e9e5e2", "#eae6e3", "#eae6e3", "#ebe7e4"] },
   { name: "living-room", file: "original-va.jpg", from: "va", x: 1340, y: 224, w: 799, h: 534, paper: ["#fffeec", "#fffeeb", "#fffeec", "#fffeec"] },
