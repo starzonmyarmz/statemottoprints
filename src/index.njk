@@ -12,7 +12,10 @@ layout: default.njk
         <button command="close" commandfor="dialog-{{ state.abbreviation }}" aria-label="Close">
           <img src="images/smp/{{ state.abbreviation }}-lg.webp" alt="{{ state.name }} — {{ state.motto }}" width="800" height="800" loading="lazy">
         </button>
-        <figcaption>{{ state.name }} — {{ state.motto }}</figcaption>
+        <figcaption>
+          {{ state.name }} — {{ state.motto }}
+          {% if state.etsy %}<a href="https://www.etsy.com/listing/{{ state.etsy }}">Buy the print on Etsy</a>{% endif %}
+        </figcaption>
       </figure>
     </dialog>
   {% endfor %}

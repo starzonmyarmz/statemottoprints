@@ -38,7 +38,11 @@ The access token lasts 1 hour and refreshes automatically. The refresh token las
 - Each mockup keeps white space around the art. Landscape art (7200×5400) leads with a landscape scene.
 - A scene whose `from` matches a state is skipped for that state, since that state already shows its original photo as image 2.
 
+## Site ↔ Etsy
+
+Each state in `src/_data/states.json` has an `etsy` listing ID (from `etsy/uploaded.json`) that the site uses for its “Buy the print on Etsy” link. A state with no ID gets no link. The shop URL is in `src/_data/site.json`.
+
 ## Known issues
 
-- **Delaware** (`de`): the art says “Liberty and Prosperity”, but the motto is “Liberty and Independence”. `src/_data/states.json` has the same mistake. `publish.mjs` holds `de` as a draft until the art is re-lettered. When new art arrives, re-render, bump `IMAGE_SET` and `FILE_SET`, upload, and remove `de` from `HOLD` only when Daniel asks.
+- **Delaware** (`de`): the art says “Liberty and Prosperity”, but the motto is “Liberty and Independence”. `src/_data/states.json` has the same mistake. `publish.mjs` holds `de` as a draft until the art is re-lettered. When new art arrives, re-render, bump `IMAGE_SET` and `FILE_SET`, upload, and remove `de` from `HOLD` only when Daniel asks. After publishing it, add its listing ID as `"etsy"` in `src/_data/states.json` so the site links to it.
 - Tennessee’s source folder is spelled `Tennesee`. `listing.mjs` handles it.
