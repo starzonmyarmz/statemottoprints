@@ -8,8 +8,8 @@ import { originalShot, sceneOutputs, webArtOutput } from "./mockups.mjs";
 import { client } from "./etsy.mjs";
 
 // Bump one of these to push that part of every existing draft again.
-const IMAGE_SET = "lifestyle-v4";
-const COPY_VERSION = "license-v1";
+const IMAGE_SET = "lifestyle-v5";
+const COPY_VERSION = "hung-v1";
 const FILE_SET = "named-v1";
 
 const { values: args } = parseArgs({

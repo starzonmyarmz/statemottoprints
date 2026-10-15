@@ -2,6 +2,7 @@ import { execFileSync } from "node:child_process";
 import { readdirSync } from "node:fs";
 import { homedir } from "node:os";
 import { basename, join } from "node:path";
+import { products } from "./products.mjs";
 
 export const PRICE = "4.00";
 export const SOURCE_DIR = process.env.STATE_MOTTOS_DIR ?? join(homedir(), "Library", "CloudStorage", "Dropbox", "Projects", "State Mottos");
@@ -14,7 +15,7 @@ export const description = (p) =>
     "",
     p.line,
     "",
-    "Hand-lettered by Daniel Marino. Printed by you, framed by you, hung wherever you argue your point most often.",
+    `Hand-lettered by Daniel Marino. Printed by you, framed by you, ${HUNG[products.indexOf(p) % HUNG.length]}`,
     "",
     "• Instant download, no shipping",
     "• Print at home, or send to any print shop",
@@ -26,6 +27,25 @@ export const description = (p) =>
     "Digital file only — nothing arrives in the mail.",
     "For personal use only. Please don’t resell or share the file.",
   ].join("\n");
+
+const HUNG = [
+  "hung wherever you argue your point most often.",
+  "hung where the in-laws will definitely see it.",
+  "hung right above the thermostat nobody else is allowed to touch.",
+  "hung at eye level for maximum hometown bragging.",
+  "hung by the front door, so guests know where they stand.",
+  "hung somewhere the dog can’t reach it.",
+  "hung over the couch, ready to settle the argument for you.",
+  "hung behind you on every video call.",
+  "hung in the hallway, where everyone has to walk past it.",
+  "hung slightly crooked, exactly how you’ll leave it.",
+  "hung in the kitchen, the true seat of state government.",
+  "hung wherever you need a little hometown pep talk.",
+  "hung in the guest room, so visitors know whose house rules apply.",
+  "hung across from your desk, for staring at during long meetings.",
+  "hung by the grill, where the strongest opinions get cooked up.",
+  "hung in the entryway, like a welcome mat for the wall.",
+];
 
 const BONUS = {
   ny: "• Two files: English (Ever Upward) and the original Latin (Excelsior)",
