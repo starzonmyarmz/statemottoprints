@@ -4,7 +4,7 @@ import { homedir } from "node:os";
 import { basename, join } from "node:path";
 
 export const PRICE = "4.00";
-export const SOURCE_DIR = process.env.STATE_MOTTOS_DIR ?? join(homedir(), "Desktop", "State Mottos");
+export const SOURCE_DIR = process.env.STATE_MOTTOS_DIR ?? join(homedir(), "Library", "CloudStorage", "Dropbox", "Projects", "State Mottos");
 
 export const title = (p) => `${p.state} State Motto — "${p.motto}" Hand-lettered Printable Wall Art`;
 

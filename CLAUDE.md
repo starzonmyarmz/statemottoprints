@@ -4,7 +4,7 @@ Two things live here: the Eleventy site (`src/`, deployed from `main` by GitHub 
 
 ## Repo is public
 
-Never commit, print, or paste anything from `etsy/etsy-credentials.json`, `etsy/etsy-token.json`, or `etsy/etsy-auth-pending.json`. Never commit the full-size print files from `~/Desktop/State Mottos` (they’re the paid product) or anything under `etsy/mockups/` (the frame photos may be licensed, and renders are large). Check `git status` before committing in `etsy/`.
+Never commit, print, or paste anything from `etsy/etsy-credentials.json`, `etsy/etsy-token.json`, or `etsy/etsy-auth-pending.json`. Never commit the full-size print files from `~/Library/CloudStorage/Dropbox/Projects/State Mottos` (they’re the paid product) or anything under `etsy/mockups/` (the frame photos may be licensed, and renders are large). Check `git status` before committing in `etsy/`.
 
 ## Etsy scripts
 

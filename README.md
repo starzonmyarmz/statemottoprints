@@ -20,7 +20,7 @@ Every push to `main` builds the site and deploys it to GitHub Pages.
 
 `etsy/` holds the scripts that write the listing copy, render lifestyle mockups, and sync the listings through the Etsy Open API v3. They need Node 22+ and ImageMagick 7 (`magick`). Nothing to install.
 
-Only the code is in git. Credentials, tokens, upload progress, frame photos, and all rendered images stay local (see `etsy/.gitignore`). The full-size print files live outside the repo in `~/Desktop/State Mottos/<State>/` (set `STATE_MOTTOS_DIR` to use a different folder).
+Only the code is in git. Credentials, tokens, upload progress, frame photos, and all rendered images stay local (see `etsy/.gitignore`). The full-size print files live outside the repo in `~/Library/CloudStorage/Dropbox/Projects/State Mottos/<State>/` (set `STATE_MOTTOS_DIR` to use a different folder).
 
 | Script | What it does |
 |---|---|
