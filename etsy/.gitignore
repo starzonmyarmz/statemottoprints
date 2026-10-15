@@ -1,0 +1,10 @@
+etsy-credentials.json
+etsy-token.json
+etsy-auth-pending.json
+uploaded.json
+listings.csv
+*.log
+smp-logo.jpg
+banner/
+history/
+mockups/
