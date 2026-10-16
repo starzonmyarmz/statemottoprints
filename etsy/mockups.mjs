@@ -19,7 +19,7 @@ const DEFAULT_FILL = 0.78;
 // Frame openings in template pixels. `fill` is how much of the opening the art may take
 // up. Openings that aren't blank get repainted first: `paper` is a bilinear gradient
 // (corners tl, tr, bl, br), `clean` keeps the photo's shadows but erases thin dark marks.
-const LANDSCAPE = [
+export const LANDSCAPE = [
   { name: "copper-landscape", file: "copper-landscape.jpg", x: 480, y: 380, w: 1036, h: 772, fill: 0.9 },
   { name: "rustic-shelf", file: "original-co.jpg", from: "co", x: 539, y: 690, w: 1466, h: 1116, paper: ["#ffffff", "#ffffff", "#ffffff", "#ffffff"] },
   { name: "brick-floor", file: "original-la.jpg", from: "la", x: 274, y: 461, w: 1121, h: 835, paper: ["#ebe7e4", "#eae6e3", "#d6d1cd", "#ccc7c3"] },
@@ -28,7 +28,7 @@ const LANDSCAPE = [
   { name: "living-room", file: "original-va.jpg", from: "va", x: 1340, y: 224, w: 799, h: 534, paper: ["#fffeec", "#fffeeb", "#fffeec", "#fffeec"] },
 ];
 
-const PORTRAIT = [
+export const PORTRAIT = [
   { name: "cactus", file: "cactus.jpg", x: 672, y: 212, w: 681, h: 916 },
   { name: "autumn-white", file: "autumn-white.jpg", x: 515, y: 825, w: 570, h: 785 },
   { name: "copper-matted", file: "copper-matted.jpg", x: 650, y: 250, w: 710, h: 950, fill: 0.9 },
@@ -65,9 +65,9 @@ export const originalShot = (p) => {
   return existsSync(file) ? file : null;
 };
 
-const magick = (args) => execFileSync("magick", args, { stdio: ["ignore", "ignore", "inherit"] });
+export const magick = (args) => execFileSync("magick", args, { stdio: ["ignore", "ignore", "inherit"] });
 
-const fitArt = (art, w, h, fill = 1) => [
+export const fitArt = (art, w, h, fill = 1) => [
   "(", art, "-background", "white", "-alpha", "remove", "-trim", "+repage",
   "-resize", `${Math.round(w * fill)}x${Math.round(h * fill)}`,
   "-gravity", "center", "-extent", `${w}x${h}`, ")",
@@ -75,7 +75,7 @@ const fitArt = (art, w, h, fill = 1) => [
 
 const place = (x, y, compose) => ["-gravity", "northwest", "-geometry", `+${x}+${y}`, "-compose", compose, "-composite"];
 
-const renderScene = (scene, art, out) => {
+export const renderScene = (scene, art, out) => {
   const { x, y, w, h, paper, clean, fill = DEFAULT_FILL } = scene;
   const template = join(TEMPLATES, scene.file);
   const repaint = paper

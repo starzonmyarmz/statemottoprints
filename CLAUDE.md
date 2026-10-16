@@ -16,6 +16,11 @@ Run everything from `etsy/`. Plain Node 22 ESM with no dependencies, plus ImageM
 - `node publish.mjs [--only]` sets listings active. Each newly published listing costs Daniel $0.20, so publish only when asked.
 - `node build-csv.mjs` writes `listings.csv` and validates titles, tags, and images.
 - `node banner.mjs` writes the shop banners to `banner/`.
+- `node bundle.mjs` builds the $50 all-50 bundle into `bundle/`: USA map mockups, an all-50 collage, three zips of grayscale state PNGs, and the map PNG. `node bundle.mjs --upload` creates it as a draft (progress is under `_bundle` in `uploaded.json`). It needs `bundle/usa_black_on_white.png`, which you export from `_usa.pxd` in the source folder with Pixelmator Pro (AppleScript: open, `delay`, `export front document … as PNG`).
+
+### Bundle limits
+
+Etsy allows 5 files per listing, at most 20MB each. The bundle converts the state art to grayscale PNGs, which look identical because the art has no color and are about a third the size. That keeps each zip under 20MB.
 
 ### How syncing works
 
@@ -44,5 +49,5 @@ Each state in `src/_data/states.json` has an `etsy` listing ID (from `etsy/uploa
 
 ## Known issues
 
-- **Delaware** (`de`): the art says “Liberty and Prosperity”, but the motto is “Liberty and Independence”. `src/_data/states.json` has the same mistake. `publish.mjs` holds `de` as a draft until the art is re-lettered. When new art arrives, re-render, bump `IMAGE_SET` and `FILE_SET`, upload, and remove `de` from `HOLD` only when Daniel asks. After publishing it, add its listing ID as `"etsy"` in `src/_data/states.json` so the site links to it.
+- **Delaware** (`de`): the art says “Liberty and Prosperity”, but the motto is “Liberty and Independence”. `src/_data/states.json` has the same mistake. `publish.mjs` holds `de` as a draft until the art is re-lettered. When new art arrives, re-render, bump `IMAGE_SET` and `FILE_SET`, upload, and remove `de` from `HOLD` only when Daniel asks. Also rebuild the bundle zips (`node bundle.mjs`) and replace the bundle’s files, since they include Delaware. After publishing it, add its listing ID as `"etsy"` in `src/_data/states.json` so the site links to it.
 - Tennessee’s source folder is spelled `Tennesee`. `listing.mjs` handles it.
